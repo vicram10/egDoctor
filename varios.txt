@@ -1,0 +1,1 @@
+#Para poder escribir aca las sentencias sql utilizadas.
