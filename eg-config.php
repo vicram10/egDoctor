@@ -10,3 +10,5 @@
     $db->open();
     //incluimos el archivo principal
     include(DirRoot.'/eg-settings.php');
+    //leemos el template
+    include(DirRoot.'/template-loader.php');

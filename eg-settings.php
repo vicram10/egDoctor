@@ -1,5 +1,25 @@
 <?php
+    //definiciones o constantes
+    define('lang', 'spanish');
     //variables globales
     $msgError = '';
+    $rootUrl = '';
+    $scripturl = '';
+    $context = array();
+    $route = '';
+    $load_header = true;
+    $load_footer = true;
+    $session_id = ''; 
+    $user_id = 0; 
+    $user_settings = array();
     //archivos importantes
     include(DirRoot.'/eg-load.php');
+    include(DirClass.'/class-user.php');
+    //leemos los archivos de idiomas
+    load_archivos_idiomas();
+    //leemos los parametros del sistema
+    load_leer_parametros();
+    //leemos los datos del usuario
+    user_obtener_datos();
+    //capturamos los valores que vienen por parametro para saber que archivo incluimos y que template
+    load_main();
