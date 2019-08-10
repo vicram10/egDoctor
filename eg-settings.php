@@ -3,8 +3,11 @@
     define('lang', 'spanish');
     //variables globales
     $msgError = '';
-    $rootUrl = '';
+    $webtitle = '';
+    $websubtitle = '';
+    $rooturl = '';
     $scripturl = '';
+    $themeurl = '';
     $context = array();
     $route = '';
     $load_header = true;

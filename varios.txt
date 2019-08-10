@@ -5,3 +5,13 @@ CREATE TABLE `egDoctor`.`parametros` ( `parametro_id` INT NOT NULL , `descripcio
 --insert a realizar
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('100', 'TITULO PRINCIPAL', 'eDoctor | Pagina para Doctores - Reservas de Turno');
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('101', 'URL PRINCIPAL', 'http://localhost/egDoctor/'), ('102', 'URL PRINCIPAL CON INDEX.PHP', 'http://localhost/egDoctor/index.php');
+INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('103', 'URL DEL TEMA', 'http://localhost/egDoctor/contents/themes');
+INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('104', 'SUB TITULO PAGINA WEB', 'Pagina para Doctores - Reservas de Turno');
+--creacion tabla usuario
+CREATE TABLE `egDoctor`.`usuario` ( `usuario_id` INT NOT NULL AUTO_INCREMENT , `usuario` VARCHAR(100) NOT NULL , `nombre_usuario` TEXT NOT NULL , `password` TEXT NOT NULL , `perfil_id` INT NOT NULL , `fecha_registro` INT NOT NULL , `estado` VARCHAR(50) NOT NULL , PRIMARY KEY (`usuario_id`), UNIQUE `idx_user_key_unique` (`usuario`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'tabla principal de usuarios';
+--usuario root
+INSERT INTO `usuario` (`usuario_id`, `usuario`, `nombre_usuario`, `password`, `perfil_id`, `fecha_registro`, `estado`) VALUES ('0', 'root', 'Root.System', 'fa44b9c47fc9beaa680601665aeaaba56641b6b5482ce2138e0a02483fb28fd7', '1', '1558060658', 'ACTIVO');
+--creacion de tabla usuario_perfil
+CREATE TABLE `egDoctor`.`usuario_perfil` ( `perfil_id` INT NOT NULL , `descripcion` TEXT NOT NULL , `fecha_alta` INT NOT NULL ) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'tabla principal de perfiles';
+--REGISTRAR
+INSERT INTO `usuario_perfil` (`perfil_id`, `descripcion`, `fecha_alta`) VALUES ('1', 'ADMINISTRADOR', '1558060658');
