@@ -24,8 +24,7 @@
             }
             catch(PDOException $PDOError)
             {
-                echo "ERROR: " . $PDOError->getMessage();
-                exit;
+                die("ERROR: " . $PDOError->getMessage());
             }        
         }
 
@@ -49,7 +48,7 @@
             }
             catch(PDOException $PDOError)
             {
-                $msgError = $PDOError->getMessage();
+                $msgError = sprintf(error_consulta_no_realizada, $PDOError->getMessage(), $consulta, json_encode($parametros));
             }
             return $resultado;
         }
