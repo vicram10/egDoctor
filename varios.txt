@@ -1,1 +1,5 @@
 #Para poder escribir aca las sentencias sql utilizadas.
+# 09 de agosto de 2019 20:42
+--creacion de tabla parametros
+CREATE TABLE `egDoctor`.`parametros` ( `parametro_id` INT NOT NULL , `descripcion` TEXT NOT NULL , `valor` TEXT NOT NULL , UNIQUE `idx_parametro_id` (`parametro_id`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'tabla principal de parametros del sistema';
+--insert a realizar

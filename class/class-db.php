@@ -28,5 +28,29 @@
                 exit;
             }        
         }
+
+        //para hacer consultas a la base de datos
+        function query($consulta, $parametros){
+            global $conn, $msgError;
+            $resultado = array();
+            $msgError = '';
+            try
+            {
+                $sql = $conn->prepare($consulta, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+                if (count($parametros)>0)
+                {
+                    $sql->execute($parametros);
+                    $resultado = $sql->fetchAll();
+                }else{
+                    $sql->execute();
+                    $resultado = $sql->fetchAll();
+                }
+                $sql->closeCursor();
+            }
+            catch(PDOException $PDOError)
+            {
+                $msgError = $PDOError->getMessage();
+            }
+            return $resultado;
+        }
     }
-?>
