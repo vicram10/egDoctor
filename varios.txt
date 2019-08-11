@@ -3,7 +3,7 @@
 --creacion de tabla parametros
 CREATE TABLE `egDoctor`.`parametros` ( `parametro_id` INT NOT NULL , `descripcion` TEXT NOT NULL , `valor` TEXT NOT NULL , UNIQUE `idx_parametro_id` (`parametro_id`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'tabla principal de parametros del sistema';
 --insert a realizar
-INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('100', 'TITULO PRINCIPAL', 'eDoctor | Pagina para Doctores - Reservas de Turno');
+INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('100', 'TITULO PRINCIPAL', 'eDoctor');
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('101', 'URL PRINCIPAL', 'http://localhost/egDoctor/'), ('102', 'URL PRINCIPAL CON INDEX.PHP', 'http://localhost/egDoctor/index.php');
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('103', 'URL DEL TEMA', 'http://localhost/egDoctor/contents/themes');
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('104', 'SUB TITULO PAGINA WEB', 'Pagina para Doctores - Reservas de Turno');

@@ -34,6 +34,7 @@
     function load_archivos_idiomas(){
         include(DirContent.'/languages/errors.'. lang .'.php');
         include(DirContent.'/languages/principal.'.lang.'.php');
+        include(DirContent.'/languages/admin.'.lang.'.php');
     }
 
     //para poder encriptar cualquier cosa

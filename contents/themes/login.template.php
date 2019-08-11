@@ -10,12 +10,15 @@
         <title>', $context['page_title'] ,' - ', $webtitle ,' - ', $websubtitle ,'</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="', $themeurl ,'/default/css/principal.css">
     </head>
-    <body class="bg-dark">
+    <body>
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-center text-white mb-4">', $webtitle ,'</h2>
+                    <h2 class="text-center mb-4" style="color:#0073AA;">
+                        <img src="', $themeurl ,'/default/images/logo.png" class="text-center mb-4" />
+                    </h2>
                     <div class="row">
                         <div class="col-md-6 mx-auto">
                             <!-- form card login -->
@@ -54,8 +57,8 @@
         <!--/container-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="', $themeurl ,'/js/principal.js"></script> 
-        <script src="', $themeurl ,'/js/forms.js"></script> 
-        <script src="', $themeurl ,'/js/sweetalert.min.js"></script>
+        <script src="', $themeurl ,'/default/js/principal.js"></script> 
+        <script src="', $themeurl ,'/default/js/forms.js"></script> 
+        <script src="', $themeurl ,'/default/js/sweetalert.min.js"></script>
     </body>
     </html>';
