@@ -6,3 +6,20 @@ h2 img{
     height: 150px;
     vertical-align: middle;
 }
+.image-full{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+}
+
+.img-height-full{
+    height: 100%;
+}
+@media only screen and (max-width: 770px) {
+    .image-full{
+        display: none;
+    }
+    .img-height-full{
+        height: auto;
+    }
+}
