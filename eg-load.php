@@ -52,4 +52,16 @@
         }else{
             $context['include'] = $route;
         }
+        //url amigable
+        $habilitar = true;
+        if ($habilitar)
+            ob_start('load_buffer');
+    }
+
+    //funcion principal para poder reescribir las url
+    function load_buffer($buffer){
+        global $scripturl, $rooturl, $context;
+        $buffer = preg_replace("/index.php\?route=login/", 'usuario/iniciar', $buffer);
+        $buffer = preg_replace("/index.php\?route=logout/", 'usuario/cerrar', $buffer);
+        return $buffer;
     }

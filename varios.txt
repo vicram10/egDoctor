@@ -1,3 +1,17 @@
+<IfModule mod_rewrite.c>
+#nuestro archivo para las url
+RewriteEngine On
+#cuando es localhost se debe estipular la ruta completa..
+#cuando subimos se especifica el root con solo "/"
+RewriteBase /egDoctor/
+
+#REGLA GENERAL
+RewriteRule ^usuario/iniciar$ ./index.php?route=login [L,NC]
+RewriteRule ^usuario/cerrar$ ./index.php?route=logout [L,NC]
+#principal
+#RewriteCond %{HTTP_HOST} ^revistadejuegos.net [NC]
+#RewriteRule ^(.*)$ http://www.revistadejuegos.net/$1 [L,R=301]
+</IfModule>
 #Para poder escribir aca las sentencias sql utilizadas.
 # 09 de agosto de 2019 20:42
 --creacion de tabla parametros

@@ -11,3 +11,4 @@
     }
     echo '<br/>';
     var_dump($user_settings);
+    echo '<br/>';
