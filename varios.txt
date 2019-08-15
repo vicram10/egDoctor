@@ -1,4 +1,4 @@
-<IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c> OK copiado
 #nuestro archivo para las url
 RewriteEngine On
 #cuando es localhost se debe estipular la ruta completa..
