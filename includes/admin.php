@@ -12,13 +12,18 @@
     $context['admin_menu'] = array(
         'main' => array(
             'page_title' => tablero_titulo,
-            'page_description' => tablero_descripcion,
+            'page_description' => sprintf(tablero_descripcion, $user_settings['nombre']),
             'template' => 'admin',
-            'include' => '',
+            'include' => 'admin',
         ),
     );
     //leemos el template acorde al parametro que viene
+    $context['admin_menu_active'] = $context['admin_menu'][$sa];
     $context['template'] = $context['admin_menu'][$sa]['template'];
+    $context['page_title'] = $context['admin_menu'][$sa]['page_title'];
+    $context['page_description'] = $context['admin_menu'][$sa]['page_description'];
+
+    //vemos las subacciones?
     if ($sa != 'main'){
         include(DirInclude.'/'.$context['admin_menu'][$sa]['include']);
     }

@@ -17,6 +17,7 @@
     $rooturl = '';
     $scripturl = '';
     $themeurl = '';
+    $rewriteurl = false;
     $context = array();
     $route = '';
     $load_header = true;

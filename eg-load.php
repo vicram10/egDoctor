@@ -8,7 +8,7 @@
     }
     //leemos los parametros del sistema
     function load_leer_parametros(){
-        global $db, $context, $rooturl, $scripturl, $themeurl, $webtitle, $websubtitle;
+        global $db, $context, $rooturl, $scripturl, $themeurl, $webtitle, $websubtitle, $rewriteurl;
         $resultado = $db->query(
             "SELECT c.parametro_id, c.descripcion, c.valor
             FROM parametros c", 
@@ -28,6 +28,8 @@
         $rooturl = $context['parametros'][101]['valor'];
         $scripturl = $context['parametros'][102]['valor'];
         $themeurl = $context['parametros'][103]['valor'];
+        //url amigable?
+        $rewriteurl = !empty($context['parametros'][105]['valor']) ? true : false;
     }
 
     //incluimos los archivos de idiomas
@@ -44,7 +46,7 @@
 
     //leemos todo lo necesario para saber que archivos usar
     function load_main(){
-        global $context, $route;
+        global $context, $route, $rewriteurl;
         //capturamos lo que viene en la url
         $route = !empty($_REQUEST['route']) ? $_REQUEST['route'] : '';
         if (empty($route)){
@@ -53,8 +55,7 @@
             $context['include'] = $route;
         }
         //url amigable
-        $habilitar = true;
-        if ($habilitar)
+        if ($rewriteurl)
             ob_start('load_buffer');
     }
 

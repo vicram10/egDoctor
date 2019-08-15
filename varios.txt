@@ -1,4 +1,4 @@
-<IfModule mod_rewrite.c> OK copiado
+<IfModule mod_rewrite.c>
 #nuestro archivo para las url
 RewriteEngine On
 #cuando es localhost se debe estipular la ruta completa..
@@ -29,3 +29,6 @@ INSERT INTO `usuario` (`usuario_id`, `usuario`, `nombre_usuario`, `password`, `p
 CREATE TABLE `egDoctor`.`usuario_perfil` ( `perfil_id` INT NOT NULL , `descripcion` TEXT NOT NULL , `fecha_alta` INT NOT NULL ) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'tabla principal de perfiles';
 --REGISTRAR
 INSERT INTO `usuario_perfil` (`perfil_id`, `descripcion`, `fecha_alta`) VALUES ('1', 'ADMINISTRADOR', '1558060658');
+
+##### 15 de agosto de 2019
+INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('105', 'HABILITAR ENLACES PERMANENTES', '1');
