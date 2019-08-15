@@ -11,7 +11,7 @@
     //acciones a realizar dentro del panel de administracion
     $context['admin_menu'] = array(
         'main' => array(
-            'page_title' => tablero_titulo,
+            'page_title' => label_centro_administracion,
             'page_description' => sprintf(tablero_descripcion, $user_settings['nombre']),
             'template' => 'admin',
             'include' => 'admin',
