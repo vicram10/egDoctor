@@ -1,6 +1,15 @@
 <?php
     //definiciones o constantes
     define('lang', 'spanish');
+    //definicion de base de datos
+    define('db_user', 'root');
+    define('db_password', '');
+    define('db_connection', 'mysql:host=localhost;dbname=egDoctor');
+    //inicializamos la bd
+    include(DirClass.'/class-db.php');
+    $db = new businessLayer();
+    //abrimos la conexion a la base de datos
+    $db->open();
     //variables globales
     $msgError = '';
     $webtitle = '';

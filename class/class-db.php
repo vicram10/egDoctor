@@ -6,9 +6,9 @@
     {
         //constructor
         function __construct(){
-            $this->stringConnection = 'mysql:host=localhost;dbname=egDoctor';
-            $this->user = 'root';
-            $this->password = '';    
+            $this->stringConnection = db_connection;
+            $this->user = db_user;
+            $this->password = db_password;    
         }
         
         //abrimos la conexion a la base de datos

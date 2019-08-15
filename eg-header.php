@@ -3,5 +3,5 @@
     define('eGeek', true);
     //definimos el path principal
     define('DirRoot', __DIR__);
-    //inicializamos la base de datos
+    //inicializamos lo mas importante
     require_once(DirRoot.'/eg-config.php');
