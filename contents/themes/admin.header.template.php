@@ -10,7 +10,7 @@ echo '
         <base href="', $themeurl ,'/dashboard/">
         <!--end::Base Path -->
         <meta charset="utf-8" />
-        <title>', $context['page_title'] ,'</title>
+        <title>', $context['admin_menu_active']['menu'] ,'</title>
         <meta name="description" content="', $context['page_description'] ,'">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--begin::Fonts -->
@@ -146,8 +146,18 @@ echo '
 								<button class="kt-header-menu-wrapper-close" id="kt_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
 								<div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
 									<div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile ">
-										<ul class="kt-menu__nav ">
-											<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><a href="', $scripturl ,'?route=admin" class="kt-menu__link "><span class="kt-menu__link-text">', label_centro_administracion ,'</span></a></li>
+										<ul class="kt-menu__nav ">';
+                                            foreach($context['admin_menu'] as $key => $value){
+                                                if (!empty($value['menu'])){
+                                                    echo '
+                                                    <li class="kt-menu__item', $value['active'] ? ' kt-menu__item--active' : '' ,'" aria-haspopup="true">
+                                                        <a href="', $scripturl ,'?route=admin', $key != 'main' ? '&sa='. $key : '','" class="kt-menu__link ">
+                                                            <span class="kt-menu__link-text">', $value['menu'] ,'</span>
+                                                        </a>
+                                                    </li>';
+                                                }
+                                            }
+                                        echo '
 										</ul>
 									</div>
 								</div>
@@ -178,4 +188,7 @@ echo '
                                 <!-- end:: Content Head -->
 
                                 <!-- begin:: Content -->
-                                <div class="kt-container  kt-grid__item kt-grid__item--fluid">';
+                                <div class="kt-container  kt-grid__item kt-grid__item--fluid">
+                                
+                                    <!--Begin::Row-->
+                                    <div class="row ml-1 mr-2">';

@@ -27,6 +27,7 @@
     $user_settings = array();
     //archivos importantes
     include(DirRoot.'/eg-load.php');
+    include(DirRoot.'/eg-template.php');
     include(DirClass.'/class-user.php');
     //leemos los archivos de idiomas
     load_archivos_idiomas();

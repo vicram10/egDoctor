@@ -2,6 +2,9 @@
 if (!defined('eGeek')) die('Acceso Prohibido');
 //template
 echo '
+                                    </div>
+                                    <!--end:: Row-->
+
                                 </div>
                                 <!-- end:: Content -->
 
@@ -11,6 +14,21 @@ echo '
                         <!-- ./kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch -->
                     </div>
                     <!-- ./kt-container  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch -->
+
+					<!-- Begin:: Footer -->
+					<div class="kt-footer kt-grid__item" id="kt_footer">
+						<div class="kt-container ">
+							<div class="kt-footer__wrapper">
+								<div class="kt-footer__copyright">
+									2019 &copy;&nbsp;', $webtitle ,'&nbsp;v.', label_version ,'&nbsp;<a href="http://www.egeek.com.py" target="_blank" class="kt-link">eGeek</a>
+								</div>
+								<div class="kt-footer__menu">
+									<a href="', $rooturl ,'" class="kt-link">', label_pagina_inicio ,'</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end:: Footer -->
 
                 </div><!-- ./kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper  -->
             </div><!-- ./kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page -->
@@ -48,6 +66,9 @@ echo '
 		<!--end::Page Vendors -->
 		<!--begin::Page Scripts(used by this page) -->
 		<script src="',$themeurl,'/dashboard/js/enterprise/pages/dashboard.js" type="text/javascript"></script>
+		<script src="',$themeurl,'/default/js/forms.js" type="text/javascript"></script>
+		<script src="',$themeurl,'/default/js/principal.js" type="text/javascript"></script>
+		<script src="',$themeurl,'/default/js/sweetalert.min.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
     </body> 
 </html>';

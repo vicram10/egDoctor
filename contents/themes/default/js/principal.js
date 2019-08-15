@@ -11,7 +11,7 @@ function Notificaciones(texto, tipoMensaje, reloadPage = false, redireccionar_ur
                     closeOnClickOutside: false,
                     closeOnEsc: false,
                     customClass: {
-                            confirmButton: 'btn btn-info',
+                            confirmButton: 'btn btn-success',
                     },
                     buttonsStyling: false,
                     confirmButtonText: '<i class="fa fa-check"></i> Ok',
@@ -26,7 +26,7 @@ function Notificaciones(texto, tipoMensaje, reloadPage = false, redireccionar_ur
                     closeOnClickOutside: false,
                     closeOnEsc: false,
                     customClass: {
-                            confirmButton: 'btn btn-info',
+                            confirmButton: 'btn btn-success',
                     },
                     buttonsStyling: false,
                     confirmButtonText: '<i class="fa fa-check"></i> Ok',
