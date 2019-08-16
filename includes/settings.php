@@ -1,7 +1,7 @@
 <?php 
 if (!defined('eGeek')) die('Acceso prohibido');
 #ya enviamos el formulario?
-if (isset($_POST)){
+if (!empty($_POST)){
     $continuamos = true;
     $json_response = array(
         'cod' => '0',
@@ -16,7 +16,9 @@ if (isset($_POST)){
             'mensaje' => error_no_conectado,
         );
     }
-
     #respuesta
     $context['json_response'] = $json_response;
+}else{
+    if (!$user_settings['conectado'])
+        load_redireccion();
 }
