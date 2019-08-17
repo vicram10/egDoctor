@@ -13,6 +13,10 @@
     const label_nombre_ayuda = 'Por favor coloque su nombre completo en este campo.';
     const label_sobre_mi = 'Breve descripcion de quien soy';
     const label_sobre_mi_ayuda = 'Debes escribir brevemente sobre quien sos, de tal manera a que puedan conocerte m&aacute;s. Puede usar etiquetas html para resaltar texto o subrayar o cursiva. Ejemplo: <code>&lt;b&gt;Entusiasta&lt;/b&gt;</code> quedar&iacute;a de la siguiente forma <b>Entusiasta</b>';
+    const label_mantenimiento_titulo = 'P&aacute;gina en Mantenimiento';
+    const label_mantenimiento_descripcion = 'La p&aacute;gina esta momentaneamente inhabilitada,<br/> 
+    puede iniciar sesion en caso que tenga un usuario y
+    <br/> contrase&ntilde;a e ingresar al panel de control.';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';
