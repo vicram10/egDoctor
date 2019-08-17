@@ -46,7 +46,7 @@ echo '
     
         <!-- begin:: Page -->
         <div class="kt-grid kt-grid--ver kt-grid--root">
-            <div class="kt-grid__item kt-grid__item--fluid kt-grid  kt-error-v5" style="background-image: url(',$themeurl,'/default/images/online-medicine.jpg);background-size: 40%;background-position: center right;">
+            <div class="kt-grid__item kt-grid__item--fluid kt-grid  kt-error-v5">
                 <div class="kt-error_container">
                     <span class="kt-error_title">
                         <h1>', $webtitle ,'</h1>
@@ -56,6 +56,19 @@ echo '
                     </p>
                     <p class="kt-error_description">
                         ', label_mantenimiento_descripcion ,'
+                        <br/><br/>';
+                        if ($user_settings['conectado']){
+                            echo '
+                            <a href="', $scripturl ,'?route=admin" class="btn btn-elevate btn-info btn-sm btn-upper text-white btn-bold">
+                               <i class="flaticon-cogwheel-1"></i> ', label_centro_administracion ,'
+                            </a>';
+                        }else{
+                            echo '
+                            <a href="', $scripturl ,'?route=login" class="btn btn-elevate btn-sm btn-upper btn-warning btn-bold">
+                                <i class="flaticon-lock"></i> ', page_title_login ,'
+                            </a>';
+                        }
+                    echo '
                     </p>
                 </div>
             </div>

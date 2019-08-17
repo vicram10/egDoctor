@@ -1,11 +1,16 @@
 body{
-  background: #54C3BD !important;
+  background: #F6EAB0/*#e2e5ec*/ !important;
 }
 .kt-error-v5 {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
+
+  .kt-error-v5{
+    background-image: url(../images/online-medicine2.jpg);background-size: 40%;background-position: center right;
+    }
+
   .kt-error-v5 .kt-error_container .kt-error_title > h1 {
     font-size: 8rem;
     margin-left: 25rem;
@@ -18,13 +23,13 @@ body{
     margin-top: 3.57rem;
     font-size: 2.3rem;
     font-weight: 700;
-    color: white; }
+    color: #595d6e; }
   .kt-error-v5 .kt-error_container .kt-error_description {
     margin-left: 26rem;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 130%;
-    color: #fff; }
+    color: #74788d; }
 
 @media (min-width: 1025px) and (max-width: 1399px) {
   .kt-error-v5 {
@@ -60,7 +65,7 @@ body{
 
 @media (max-width: 768px) {
   .kt-error-v5 .kt-error_container .kt-error_title > h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     margin-top: 5rem;
     margin-left: 4rem; }
   .kt-error-v5 .kt-error_container .kt-error_subtitle {
@@ -70,4 +75,7 @@ body{
     line-height: 2rem; }
   .kt-error-v5 .kt-error_container .kt-error_description {
     font-size: 1.4rem;
-    margin-left: 4rem; } }
+    margin-left: 4rem; } 
+  .kt-error-v5{
+    background-image: none;}
+  }

@@ -2,6 +2,8 @@
     const label_version = '1.0.0.0';
     const label_visitante = 'Visitante';
     //etiquetas
+    const label_cerrar_sesion = 'Cerrar Sesi&oacute;n';
+    const label_cerrar_sesion_ayuda = 'Para salir de tu panel de Administracion y cerrar tu sesion de usuario.';
     const label_hola = 'Hola';
     const label_usuario = 'Usuario';
     const label_password = 'Contrase&ntilde;a';

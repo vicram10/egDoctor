@@ -129,6 +129,25 @@ echo '
                                             </div>
                                             <!-- end:: Head -->
 
+                                            <!--begin: Navigation -->
+											<div class="kt-notification">
+												<a href="', $scripturl ,'?route=logout" class="kt-notification__item">
+													<div class="kt-notification__item-icon">
+														<i class="flaticon-logout kt-font-success"></i>
+													</div>
+													<div class="kt-notification__item-details">
+														<div class="kt-notification__item-title kt-font-bold">
+															', label_cerrar_sesion ,'
+														</div>
+														<div class="kt-notification__item-time">
+															', label_cerrar_sesion_ayuda ,'
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!--end: Navigation -->
+
                                         </div>
 
                                     </div>

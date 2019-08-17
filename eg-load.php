@@ -48,18 +48,12 @@
     function load_main(){
         global $context, $route, $rewriteurl;
         //capturamos lo que viene en la url
-        $route = !empty($_REQUEST['route']) ? $_REQUEST['route'] : '';
-        if (empty($route)){
-            $context['include'] = 'home';
-        }else{
-            $context['include'] = $route;
-        }
-
+        $route = !empty($_REQUEST['route']) ? $_REQUEST['route'] : 'home';
+        $context['include'] = $route;
         //si la pagina principal decimos que no esta habilitado
-        if (empty($context['parametros'][106]['valor'])){
+        if (empty($context['parametros'][106]['valor']) && in_array($route, array('home'))){
             $context['include'] = 'maintenance';
         }
-
         //url amigable
         if ($rewriteurl)
             ob_start('load_buffer');
