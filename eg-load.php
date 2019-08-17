@@ -54,6 +54,12 @@
         }else{
             $context['include'] = $route;
         }
+
+        //si la pagina principal decimos que no esta habilitado
+        if (empty($context['parametros'][106]['valor'])){
+            $context['include'] = 'maintenance';
+        }
+
         //url amigable
         if ($rewriteurl)
             ob_start('load_buffer');
