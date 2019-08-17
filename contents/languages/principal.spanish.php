@@ -19,6 +19,7 @@
     const label_mantenimiento_descripcion = 'La p&aacute;gina esta momentaneamente inhabilitada,<br/> 
     puede iniciar sesion en caso que tenga un usuario y
     <br/> contrase&ntilde;a e ingresar al panel de control.';
+    const label_centro_informacion = 'Centro de Informaci&oacute;n';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';
