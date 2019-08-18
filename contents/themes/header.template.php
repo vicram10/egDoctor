@@ -51,7 +51,7 @@
         <div class="arlo_tm_mobile_header_wrap">
             <div class="main_wrap">
                 <div class="logo">
-                    <img src="img/logo/mobile_logo.png" alt="" />
+                    <img src="', $themeurl ,'/default/images/logo/mobile_logo.png" alt="" />
                 </div>
                 <div class="arlo_tm_trigger">
                     <div class="hamburger hamburger--collapse-r">
@@ -83,7 +83,7 @@
             <div class="arlo_tm_leftpart_wrap">
                 <div class="leftpart_inner">
                     <div class="logo_wrap">
-                        <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
+                        <a href="#"><img src="', $themeurl ,'/default/images/logo/desktop-logo.png" alt="" /></a>
                     </div>
                     <div class="menu_list_wrap">
                         <ul class="anchor_nav">
