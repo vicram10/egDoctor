@@ -20,6 +20,7 @@
     puede iniciar sesion en caso que tenga un usuario y
     <br/> contrase&ntilde;a e ingresar al panel de control.';
     const label_centro_informacion = 'Centro de Informaci&oacute;n';
+    const label_intereses = 'Interes';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';

@@ -28,6 +28,15 @@ echo '
 									<span class="form-text text-muted">', label_sobre_mi_ayuda ,'</span>
 								</div>
                             </div>
+
+                            <div class="form-group row">
+								<label class="col-lg-3 col-form-label">', label_intereses ,':</label>
+								<div class="col-lg-9">
+									<input type="text" class="form-control" placeholder="', label_intereses ,'" name="input_interes" />
+									<span class="form-text text-muted"></span>
+								</div>
+                            </div>
+
                         </div>
                         
                         <!-- end:: Acerca de... -->

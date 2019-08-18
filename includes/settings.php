@@ -21,4 +21,7 @@ if (!empty($_POST)){
 }else{
     if (!$user_settings['conectado'])
         load_redireccion();
+    //leemos un footer especial
+    $context['footer_html'] .= '
+    <script src="'. $themeurl .'/dashboard/js/enterprise/pages/crud/forms/widgets/form-repeater.js" type="text/javascript"></script>';
 }

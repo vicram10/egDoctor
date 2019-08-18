@@ -30,6 +30,8 @@
         $themeurl = $context['parametros'][103]['valor'];
         //url amigable?
         $rewriteurl = !empty($context['parametros'][105]['valor']) ? true : false;
+        //variables a usar
+        $context['footer_html'] = '';
     }
 
     //incluimos los archivos de idiomas
