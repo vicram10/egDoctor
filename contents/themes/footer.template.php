@@ -1,7 +1,9 @@
 <?php
     if (!defined('eGeek')) die('Acceso Prohibido');
     echo '
-     
+        </div> 
+        <!-- /Content -->
+
     </div>
     <!-- / WRAPPER ALL -->
 
