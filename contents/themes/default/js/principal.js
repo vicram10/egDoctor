@@ -1,3 +1,25 @@
+$(document).ready(function(){
+        //agregar filas
+        $('#AgregarFilas').click(function(){
+                var contador = 0;
+                $('#campo_repetir_lista').children().each(function (index){
+                        contador++;
+                        console.log(contador);
+                });
+                var nuevo_id = contador+1;
+                $('#campo_1').clone().appendTo('#campo_repetir_lista').attr('id', 'campo_'+nuevo_id);
+                //vemos el nuevo div y trataremos de cambiar su boton de eliminar
+                $('#campo_'+nuevo_id).find('button').attr('onclick', 'EliminarFila(\'campo_'+nuevo_id+'\')');
+                $('#campo_'+nuevo_id).find('button').removeClass('kt-hidden');
+        });
+});
+
+//eliminamos especificamente las filas de un campo que repetimos
+function EliminarFila(campo_id){
+        console.log('Eliminando fila...');
+        $('#'+campo_id).remove();
+}
+
 //notificaciones que emitira el sistema
 function Notificaciones(texto, tipoMensaje, reloadPage = false, redireccionar_url = '', tipoAlerta = "success") {
     //usamos el sweetAlertBoostrap --> https://sweetalert2.github.io/#examples

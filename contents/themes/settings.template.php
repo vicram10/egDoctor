@@ -5,7 +5,7 @@ echo '
     ', template_portlet_head('flaticon-user', '', configuraciones_titulo2, '') ,'
     <div class="kt-portlet__body">
         <div class="kt-portlet__content">
-            <form id="formConfiguraciones" name="formConfiguraciones" role="form" action="', $scripturl ,'?route=admin&sa=postsettings">
+            <form class="kt-form" id="formConfiguraciones" name="formConfiguraciones" role="form" action="', $scripturl ,'?route=admin&sa=postsettings">
                 <div class="kt-portlet__body">
                     <div class="kt-section kt-section--first">
                         
@@ -33,9 +33,50 @@ echo '
 								<label class="col-lg-3 col-form-label">', label_intereses ,':</label>
 								<div class="col-lg-9">
 									<input type="text" class="form-control" placeholder="', label_intereses ,'" name="input_interes" />
-									<span class="form-text text-muted"></span>
+									<span class="form-text text-muted">', label_intereses_ayuda ,'</span>
 								</div>
                             </div>
+                            
+                            <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>
+
+                            <div id="campo_repetir">
+                                <div class="form-group form-group-last row" id="campo_repetir">
+                                    <label class="col-lg-2 col-form-label">', label_titulos_academicos ,':</label>
+                                    
+                                    <div id="campo_repetir_lista" class="col-lg-10">
+                                        
+                                        <div id="campo_1" class="form-group row align-items-center">     
+                                            <div class="col-md-8">
+                                                <div class="kt-form__group--inline">
+                                                    <div class="kt-form__control">
+                                                        <input type="text" class="form-control" placeholder="', label_titulo ,'" name="input_titulo_academico[]"/> 
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button type="button" class="btn-sm btn btn-label-danger btn-bold kt-hidden">
+                                                    <i class="la la-trash-o"></i>
+                                                    ', btn_borrar ,'
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>                 
+                                </div>
+
+                                <div class="form-group form-group-last row">
+                                    <label class="col-lg-2 col-form-label"></label>
+                                    <div class="col-lg-4">
+                                        <a href="javascript:;" class="btn btn-bold btn-sm btn-label-brand" id="AgregarFilas">
+                                            <i class="la la-plus"></i> ', btn_agregar ,'
+                                        </a>
+                                    </div>                                        
+                                </div>
+                            </div>
+
+                            <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>
+                                
 
                         </div>
                         

@@ -21,10 +21,15 @@
     <br/> contrase&ntilde;a e ingresar al panel de control.';
     const label_centro_informacion = 'Centro de Informaci&oacute;n';
     const label_intereses = 'Interes';
+    const label_intereses_ayuda = 'Cual es tu hobbie, puede separar por comas. Ejemplo: futbol, autos, tecnolog&iacute;a.';
+    const label_titulos_academicos = 'T&iacute;tulos Acad&eacute;micos';
+    const label_titulo = 'T&iacute;tulo';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';
     const btn_cancelar = 'Cancelar';
+    const btn_borrar = 'Borrar';
+    const btn_agregar = 'Agregar';
     //login
     const page_title_login = 'Iniciar Sesi&oacute;n';
     

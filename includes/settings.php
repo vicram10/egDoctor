@@ -5,7 +5,7 @@ if (!empty($_POST)){
     $continuamos = true;
     $json_response = array(
         'cod' => '0',
-        'mensaje' => mensaje_guardado_correctamente,
+        'mensaje' => mensaje_guardado_correctamente . ', '. json_encode($_POST, JSON_PRETTY_PRINT),
     );
 
     //validamos que esta conectado
