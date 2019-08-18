@@ -3,38 +3,38 @@ function Notificaciones(texto, tipoMensaje, reloadPage = false, redireccionar_ur
     //usamos el sweetAlertBoostrap --> https://sweetalert2.github.io/#examples
     if (tipoMensaje == 'OK') {
         console.log('tipo de mensaje OK, mostramos la NOTIFICACION OK');
+        var btn_clase = 'btn btn-info btn-bold btn-elevate btn-sm';
         if (reloadPage) {
-            Swal.fire({
+                Swal.fire({
                     title: "Mensaje del Sistema",
                     html: texto,
                     type: tipoAlerta,
                     closeOnClickOutside: false,
                     closeOnEsc: false,
                     customClass: {
-                            confirmButton: 'btn btn-success',
+                            confirmButton: btn_clase,
                     },
                     buttonsStyling: false,
-                    confirmButtonText: '<i class="fa fa-check"></i> Ok',
-            }).then((value)=>{
+                    confirmButtonText: 'Aceptar',
+                }).then((value)=>{
                     location.reload();
-            });
+                });
         } else {
-            Swal.fire({
+                Swal.fire({
                     title: "Mensaje del Sistema",
                     html: texto,
                     type: tipoAlerta,
                     closeOnClickOutside: false,
                     closeOnEsc: false,
                     customClass: {
-                            confirmButton: 'btn btn-success',
+                            confirmButton: btn_clase,
                     },
                     buttonsStyling: false,
-                    confirmButtonText: '<i class="fa fa-check"></i> Ok',
-            }).then((value)=>{
+                    confirmButtonText: 'Aceptar',
+                }).then((value)=>{
                     if (redireccionar_url != '')
                         window.location.href = redireccionar_url;
-
-            });
+                });
         }
     } else {
         Swal.fire({
@@ -42,10 +42,10 @@ function Notificaciones(texto, tipoMensaje, reloadPage = false, redireccionar_ur
                 title: "Mensaje del Sistema", 
                 type: "error",
                 customClass: {
-                        confirmButton: 'btn btn-danger',
+                        confirmButton: 'btn btn-danger btn-sm',
                 },
                 buttonsStyling: false,
-                confirmButtonText: '<i class="fa fa-exclamation"></i> Ok',
+                confirmButtonText: 'Aceptar',
         });
     }
     /*notificacionTemplate = (codigo == 0) ? "lime" : "ruby";
