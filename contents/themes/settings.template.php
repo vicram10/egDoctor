@@ -24,7 +24,7 @@ echo '
                             <div class="form-group row">
 								<label class="col-lg-3 col-form-label">', label_sobre_mi ,':</label>
 								<div class="col-lg-9">
-                                    <textarea class="form-control" placeholder="', label_sobre_mi ,'" name="input_sobre_mi" rows="8"></textarea>
+                                    <textarea class="form-control" placeholder="', label_sobre_mi ,'" name="input_sobre_mi" rows="9"></textarea>
 									<span class="form-text text-muted">', label_sobre_mi_ayuda ,'</span>
 								</div>
                             </div>
