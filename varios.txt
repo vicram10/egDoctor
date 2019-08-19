@@ -33,3 +33,5 @@ INSERT INTO `usuario_perfil` (`perfil_id`, `descripcion`, `fecha_alta`) VALUES (
 ##### 15 de agosto de 2019
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('105', 'HABILITAR ENLACES PERMANENTES', '1');
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('106', 'HABILITAR PAGINA PRINCIPAL', '0');
+
+#### 19 de agosto de 2019
