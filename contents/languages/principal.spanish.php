@@ -9,6 +9,7 @@
     const label_password = 'Contrase&ntilde;a';
     const label_pagina_inicio = 'Visitar sitio';
     const label_escritorio = 'Escritorio';
+    const label_administracion = 'Administraci&oacute;n';
     const label_descripcion_corto = '#TEMP-%1$s#INCL-%2$s';
     const label_centro_administracion = 'Centro de Administraci&oacute;n';
     const label_nombre = 'Nombre';
@@ -24,6 +25,9 @@
     const label_intereses_ayuda = 'Cual es tu hobbie, puede separar por comas. Ejemplo: futbol, autos, tecnolog&iacute;a.';
     const label_titulos_academicos = 'T&iacute;tulos Acad&eacute;micos';
     const label_titulo = 'T&iacute;tulo';
+    const label_portal = 'Portal';
+    const label_about = 'Acerca de';
+    const label_contacto = 'Contacto';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';

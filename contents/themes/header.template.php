@@ -64,8 +64,19 @@
             <div class="arlo_tm_mobile_menu_wrap">
                 <div class="mob_menu">
                     <ul class="anchor_nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="', $rooturl ,'">', label_portal ,'</a></li>
+                        <li><a href="#about">', label_about ,'</a></li>
+                        <li><a href="#contact">', label_contacto ,'</a></li>';
+
+                    //estamos conectados?
+                    if ($user_settings['conectado']){
+                        echo '
+                        <li><a href="', $scripturl ,'?route=admin">', label_administracion ,'</a></li>';
+                    }else{
+                        echo '
+                        <li><a href="', $scripturl ,'?route=login">', page_title_login ,'</a></li>';
+                    }
+                    echo '    
                     </ul>
                 </div>
             </div>
@@ -83,8 +94,18 @@
                     </div>
                     <div class="menu_list_wrap">
                         <ul class="anchor_nav">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
+                            <li><a href="', $rooturl ,'">', label_portal ,'</a></li>
+                            <li><a href="#about">', label_about ,'</a></li>
+                            <li><a href="#contact">', label_contacto ,'</a></li>';
+                            //estamos conectados?
+                            if ($user_settings['conectado']){
+                                echo '
+                                <li><a href="', $scripturl ,'?route=admin">', label_administracion ,'</a></li>';
+                            }else{
+                                echo '
+                                <li><a href="', $scripturl ,'?route=login">', page_title_login ,'</a></li>';
+                            }
+                            echo '    
                         </ul>
                     </div>
                     <div class="leftpart_bottom">
@@ -94,7 +115,6 @@
                                 <li><a href="#"><i class="xcon-twitter"></i></a></li>
                                 <li><a href="#"><i class="xcon-linkedin"></i></a></li>
                                 <li><a href="#"><i class="xcon-instagram"></i></a></li>
-                                <li><a href="#"><i class="xcon-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>
