@@ -16,7 +16,7 @@
                             <div class="main" data-img-url="', $themeurl ,'/default/images/about/1.jpg"></div>
                         </div>
                         <div class="name_holder">
-                            <h3>Alan <span>Michaelis</span></h3>
+                            <h3>', $context['acerca_de']['mi_nombre']['valor']  ,' <span>', $context['acerca_de']['mi_apellido']['valor'] ,'</span></h3>
                         </div>
                         <div class="text_typing">
                             <p>I\'m a <span class="arlo_tm_animation_text_word"></span></p>
@@ -36,8 +36,8 @@
         <div class="arlo_tm_about_wrapper_all">
             <div class="container">
                 <div class="arlo_tm_title_holder">
-                    <h3>About Me</h3>
-                    <span>Main informations about me</span>
+                    <h3>', label_about2 ,'</h3>
+                    <span>', label_about_descripcion ,'</span>
                 </div>
                 <div class="arlo_tm_about_wrap">
                     <div class="author_wrap">
@@ -56,10 +56,11 @@
                         </div>
                         <div class="rightbox">
                             <div class="arlo_tm_mini_title_holder">
-                                <h4>I\'m Alan Michaelis and <span class="arlo_tm_animation_text_word"></span></h4>
+                                <h4>', label_hola2 ,' ', $context['acerca_de']['nombre_completo']['valor'] ,' and <span class="arlo_tm_animation_text_word"></span></h4>
                             </div>
                             <div class="definition">
-                                <p>Hi! My name is <strong>Alan Michaelis</strong>. I am a Web Developer, and I\'m very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
+                                <p>', sprintf(label_presentacion_about, $context['acerca_de']['nombre_completo']['valor']
+,$context['acerca_de']['breve_descripcion']['valor']) ,'</p>
                             </div>
                             <div class="about_short_contact_wrap">
                                 <ul>
@@ -95,16 +96,6 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="buttons_wrap">
-                                <ul>
-                                    <li>
-                                        <a href="index.html"><span>Download CV</span></a>
-                                    </li>
-                                    <li class="anchor">
-                                        <a href="#contact"><span>Send Message</span></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,8 +108,8 @@
     <div class="arlo_tm_section" id="contact">
         <div class="container">
             <div class="arlo_tm_title_holder contact">
-                <h3>Contact Me</h3>
-                <span>Get in touch with me</span>
+                <h3>', label_contacto ,'</h3>
+                <span>', label_contacto2 ,'</span>
             </div>
         </div>
         <div class="arlo_tm_footer_contact_wrapper_all">
@@ -126,34 +117,24 @@
                 <div class="container">
                     <div class="leftbox">
                         <div class="arlo_tm_mini_title_holder contact">
-                            <h4>Get in Touch</h4>
-                        </div>
-                        <div class="short_info_wrap">
-                            <ul>
-                                <li><p><label>Address:</label><span>123 Qwerty Avenue NYC, USA</span></p></li>
-                                <li><p><label>Email:</label><span><a href="mailto:example@gmail.com">example@gmail.com</a></span></p></li>
-                                <li><p><label>Phone:</label><span>+77 022 177 05 05</span></p></li>
-                                <li><p><label>Website:</label><span><a href="mailto:example@gmail.com">www.yourdomain.com</a></span></p></li>
-                            </ul>
+                            <h4>', label_contacto3 ,'</h4>
                         </div>
                     </div>
                     <div class="rightbox">
                         <div class="arlo_tm_contact_wrap">
                             <div class="main_input_wrap">
-                                <form action="/" method="post" class="contact_form" id="contact_form">
-                                    <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-                                    <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                                <form action="', $scripturl ,'?route=sendmessage" method="post" class="contact_form" id="contact_form">
                                     <div class="wrap">
-                                        <input id="name" type="text" placeholder="Your Name">
+                                        <input id="name" type="text" placeholder="', label_tu_nombre ,'" name="input_nombre" />
                                     </div>
                                     <div class="wrap">
-                                        <input id="email" type="text" placeholder="Your Email">
+                                        <input id="email" type="email" placeholder="', label_tu_correo ,'" name="input_correo"/>
                                     </div>
                                     <div class="wrap">
-                                        <textarea id="message" placeholder="Your Message"></textarea>
+                                        <textarea id="message" placeholder="', label_tu_mensaje ,'" name="input_mensaje"></textarea>
                                     </div>
                                     <div class="arlo_tm_button">
-                                        <a id="send_message" href="#"><span>Send Message</span></a>
+                                        <a id="enviar_mensaje" href="#"><span>', btn_enviar_mensaje ,'</span></a>
                                     </div>
                                 </form>
                             </div>

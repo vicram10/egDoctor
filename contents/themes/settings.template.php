@@ -16,15 +16,23 @@ echo '
                             <div class="form-group row">
 								<label class="col-lg-3 col-form-label">', label_nombre ,':</label>
 								<div class="col-lg-9">
-									<input type="text" class="form-control" placeholder="', label_nombre ,'" name="input_nombre" />
+									<input type="text" class="form-control" placeholder="', label_nombre ,'" name="input_nombre" value="', !empty($context['acerca_de']['mi_apellido']['valor']) ? $context['acerca_de']['mi_nombre']['valor'] : '' ,'"/>
 									<span class="form-text text-muted">', label_nombre_ayuda ,'</span>
+								</div>
+                            </div>
+
+                            <div class="form-group row">
+								<label class="col-lg-3 col-form-label">', label_apellido ,':</label>
+								<div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="', label_apellido ,'" name="input_apellido" value="', !empty($context['acerca_de']['mi_apellido']['valor']) ? $context['acerca_de']['mi_apellido']['valor'] : '' ,'"/>
+									<span class="form-text text-muted">', label_apellido_ayuda ,'</span>
 								</div>
                             </div>
 
                             <div class="form-group row">
 								<label class="col-lg-3 col-form-label">', label_sobre_mi ,':</label>
 								<div class="col-lg-9">
-                                    <textarea class="form-control" placeholder="', label_sobre_mi ,'" name="input_sobre_mi" rows="9"></textarea>
+                                    <textarea class="form-control" placeholder="', label_sobre_mi ,'" name="input_sobre_mi" rows="9">', !empty($context['acerca_de']['mi_apellido']['valor']) ? $context['acerca_de']['breve_descripcion']['valor'] : '' ,'</textarea>
 									<span class="form-text text-muted">', label_sobre_mi_ayuda ,'</span>
 								</div>
                             </div>

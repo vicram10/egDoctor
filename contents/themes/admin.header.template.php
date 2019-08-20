@@ -111,7 +111,7 @@ echo '
 													', $user_settings['nombre'] ,'
 												</div>
 												<div class="kt-user-card__badge">
-													<span class="btn btn-label-primary btn-sm btn-bold btn-font-md">23 messages</span>
+													<span class="btn btn-label-primary btn-sm btn-bold btn-font-md">', $context['mensajes_no_leidos'] ,'&nbsp;&nbsp;', label_mensajes ,'</span>
 												</div>
                                             </div>
                                             <!-- end:: Head -->

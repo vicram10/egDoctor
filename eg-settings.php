@@ -35,5 +35,7 @@
     load_leer_parametros();
     //leemos los datos del usuario
     user_obtener_datos();
+    //datos importantes de la web
+    load_datos_web();
     //capturamos los valores que vienen por parametro para saber que archivo incluimos y que template
     load_main();

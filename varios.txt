@@ -35,3 +35,9 @@ INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('105',
 INSERT INTO `parametros` (`parametro_id`, `descripcion`, `valor`) VALUES ('106', 'HABILITAR PAGINA PRINCIPAL', '0');
 
 #### 19 de agosto de 2019
+CREATE TABLE `egDoctor`.`acerca_de` ( `tipo_registro` VARCHAR(100) NOT NULL , `valor_dato` TEXT NOT NULL , `fecha` INT NOT NULL, PRIMARY KEY (`tipo_registro`), UNIQUE `idx_tipo_registro_unique` (`acerca_de`) ) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'permitira registrar los datos importantes de la web';
+--REGISTRAR
+INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('mi_nombre', '', ''), ('breve_descripcion', '', '')
+INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('mi_apellido', '', '')
+--tabla nueva
+CREATE TABLE `egDoctor`.`mensajes_recibidos` ( `id_mensaje` INT NOT NULL AUTO_INCREMENT , `nombre` TEXT NOT NULL , `correo` TEXT NOT NULL , `mensaje` TEXT NOT NULL , `fecha_mensaje` INT NOT NULL , `marcar_leido` VARCHAR(2) NOT NULL DEFAULT 'NO' COMMENT 'SI;NO' , PRIMARY KEY (`id_mensaje`), INDEX `idx_marcar_leido` (`marcar_leido`)) ENGINE = MyISAM CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'tabla donde se guardaran los contactos que hagan los visitan';

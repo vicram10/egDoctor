@@ -52,4 +52,19 @@
             }
             return $resultado;
         }
+
+        //para poder ejecutar sin necesidad de devolver un valor
+        function ejecutar($string)
+        {
+            global $context, $conn, $msgError;
+            try
+            {
+                $sql = $conn->prepare($string);
+                $sql->execute();
+            }
+            catch(PDOException $PDOError)
+            {
+                $msgError = sprintf(error_consulta_no_realizada, $PDOError->getMessage(), $string, '');
+            }
+        }
     }

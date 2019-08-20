@@ -2392,3 +2392,34 @@ img.svg{
 	.arlo_tm_portfolio_list > li{width: 100%;padding-left: 0px;}
 	.arlo_tm_counter_wrap{padding: 94px 0px 48px 0px;}
 }	
+
+.btn {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.btn-info {
+    color: #fff;
+    background-color: #2786fb;
+    border-color: #2786fb;
+    color: #2786fb;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #BD0A0D;
+    border-color: #BD0A0D;
+    color: darkred;
+}
+
+.btn {
+    background: transparent;
+    outline: none !important;
+    vertical-align: middle;
+}
+.btn-sm, .btn-group-sm > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}

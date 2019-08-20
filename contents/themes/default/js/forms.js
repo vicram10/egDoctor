@@ -46,4 +46,32 @@ $(document).ready(function(){
             console.log('finalizamos el guardado de las configuraciones realizadas');
         });
     });
+
+    $('#contact_form').submit(function(evento){
+        evento.preventDefault();
+        console.log('enviando mensaje...');
+        //hacemos ahora el trabajo del login
+        var $form = $(this),
+        accion = $form.attr('action'),
+        codigo = "",
+        mensaje = "";
+        var posting = $.post(accion, $form.serialize());
+        posting.done(function (data) {
+            console.log(data);
+            var respuesta = JSON.parse(data);
+            codigo = respuesta['cod'];
+            mensaje = respuesta['mensaje'];
+            if (codigo == 0) {
+                Notificaciones(mensaje, 'OK', true);
+            } else {
+                Notificaciones(mensaje, 'ERROR');
+            }
+            console.log('finalizamos el envio de mensaje...');
+        });
+    });
+
+    $('#enviar_mensaje').click(function(e){
+        e.preventDefault();
+        $('#contact_form').submit();
+    });
 });

@@ -63,6 +63,16 @@
         return $mensaje_retorno;
     }
 
+    //para saber la cantidad de mensajes recibidos
+    function user_cantidad_mensajes_recibidos($marcar_leido = 'NO'){
+        global $db;
+        $consulta = $db->query(
+            "SELECT count(1) cantidad FROM mensajes_recibidos WHERE marcar_leido = '$marcar_leido' OR '$marcar_leido' = 'TODO'",
+            array()
+        );
+        return !empty($consulta) ? (int) $consulta[0]['cantidad'] : 0; 
+    }
+
     //metodo para poder cerrar la sesion del usuario
     function user_cerrar_sesion(){
         global $generico;

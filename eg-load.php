@@ -46,6 +46,37 @@
         return hash('sha256', sha1($texto.'-$2y$10$tDXnwNB2BqfCZzt/r6oQbuRGtipTq.PBtk/7DFV9W2n.0ZEpqDm.W'));
     }
 
+    //consultamos algunas tablas importantes y para uso en la web
+    function load_datos_web(){
+        global $context, $db;
+        //vemos los datos de acerca de...
+        $acerca_de = $db->query(
+            "SELECT c.tipo_registro, c.valor_dato, c.fecha
+            FROM acerca_de c", 
+            array()
+        );
+        $context['acerca_de'] = array();
+        foreach($acerca_de as $key => $value){
+            $context['acerca_de'][$value['tipo_registro']] = array(
+                'valor' => $value['valor_dato'],
+                'fecha' => load_formato_fecha('fecha', $value['fecha']),
+            );
+        }
+        if (!empty($context['acerca_de']['mi_nombre']['valor'])){
+            $context['acerca_de']['nombre_completo']['valor'] = $context['acerca_de']['mi_nombre']['valor'].' '.$context['acerca_de']['mi_apellido']['valor'];
+        }
+    }
+
+    //nos permite actualizar nuestra tabla principal acerca de...
+    function load_actualizacion_acerca_de($registros){
+        global $db, $msgError;
+        foreach($registros as $key => $value){
+            $valor_dato = $value['valor'];
+            $db->ejecutar("UPDATE acerca_de SET valor_dato = '$valor_dato', fecha = ". time() ." WHERE tipo_registro = '$key'");
+            if (!empty($msgError)){ return; }
+        }
+    }
+
     //leemos todo lo necesario para saber que archivos usar
     function load_main(){
         global $context, $route, $rewriteurl;
@@ -67,4 +98,46 @@
         $buffer = preg_replace("/index.php\?route=login/", 'usuario/iniciar', $buffer);
         $buffer = preg_replace("/index.php\?route=logout/", 'usuario/cerrar', $buffer);
         return $buffer;
+    }
+
+    //darle formato al time()
+    function load_formato_fecha($tipo, $date){
+        $return = "";
+        $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+        //decimos la region de la fecha..
+        setlocale(LC_ALL, 'es-ES'); 
+        //devuelve 21/05/2012
+        switch($tipo){
+            case "blog":
+                $return = strftime('%B %d, %Y',$date);
+                break;
+            case "mes_dia":
+                $return = $meses[strftime('%m',$date)-1].' '.strftime('%d',$date);
+                break;
+            case "hora":
+                $return = strftime('%H:%M',$date);      
+                break;
+            case "year":
+                $return = strftime('%Y',$date);     
+                break;  
+            case "fecha_hora":
+                $return = strftime('%d-%m-%y %H:%M', $date);
+                break;
+            case "fecha":
+                $return = strftime('%d/%m/%Y',$date);
+                break;
+            case "dia":
+                $return = strftime('%d',$date);
+                break;
+            case "mes_letra":
+                $return = $meses[strftime('%m',$date)-1];
+                break;
+            case "periodo_letra":
+                $return = $meses[strftime('%m',$date)-1].'/'.strftime('%Y',$date);
+                break;
+            case "periodo":
+                $return = strftime('%m%Y',$date);
+                break;
+        }
+        return $return;
     }

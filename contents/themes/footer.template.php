@@ -20,6 +20,9 @@
     <!--[if lt IE 10]> <script type="text/javascript" src="', $themeurl ,'/default/js/ie8.js"></script> <![endif]-->	
     <script src="', $themeurl ,'/default/js/plugins.js"></script>
     <script src="', $themeurl ,'/default/js/init.js"></script>
+    <script src="',$themeurl,'/default/js/forms.js" type="text/javascript"></script>
+    <script src="',$themeurl,'/default/js/principal.js" type="text/javascript"></script>
+    <script src="',$themeurl,'/default/js/sweetalert.min.js" type="text/javascript"></script>
     <!-- /SCRIPTS -->
     </body>
     </html>';
