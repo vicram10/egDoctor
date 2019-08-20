@@ -32,7 +32,21 @@ echo '
 
                 </div><!-- ./kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper  -->
             </div><!-- ./kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page -->
-        </div><!-- ./kt-grid kt-grid--hor kt-grid--root -->
+		</div><!-- ./kt-grid kt-grid--hor kt-grid--root -->
+		<!--begin::Fonts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    "families": ["Poppins:300,400,500,600,700", "Asap+Condensed:500"]
+                },
+                active: function() {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+		<!--end::Fonts -->
+		
         <!-- begin::Global Config(global config for global JS sciprts) -->
 		<script>
 			var KTAppOptions = {

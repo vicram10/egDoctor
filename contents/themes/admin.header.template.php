@@ -13,19 +13,6 @@ echo '
         <title>', $context['admin_menu_active']['menu'] ,'</title>
         <meta name="description" content="', $context['page_description'] ,'">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--begin::Fonts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-        <script>
-            WebFont.load({
-                google: {
-                    "families": ["Poppins:300,400,500,600,700", "Asap+Condensed:500"]
-                },
-                active: function() {
-                    sessionStorage.fonts = true;
-                }
-            });
-        </script>
-        <!--end::Fonts -->
         <!--begin::Page Vendors Styles(used by this page) -->
         <link href="', $themeurl ,'/dashboard/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
         <!--end::Page Vendors Styles -->

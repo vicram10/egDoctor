@@ -51,7 +51,7 @@
         <div class="arlo_tm_mobile_header_wrap">
             <div class="main_wrap">
                 <div class="logo">
-                    <img src="', $themeurl ,'/default/images/logo/mobile_logo.png" alt="" />
+                    &nbsp;
                 </div>
                 <div class="arlo_tm_trigger">
                     <div class="hamburger hamburger--collapse-r">
@@ -66,10 +66,6 @@
                     <ul class="anchor_nav">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,16 +79,12 @@
             <div class="arlo_tm_leftpart_wrap">
                 <div class="leftpart_inner">
                     <div class="logo_wrap">
-                        <a href="#"><img src="', $themeurl ,'/default/images/logo/desktop-logo.png" alt="" /></a>
+                        &nbsp;
                     </div>
                     <div class="menu_list_wrap">
                         <ul class="anchor_nav">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="leftpart_bottom">
@@ -109,4 +101,8 @@
                     <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
                 </div>
             </div>
-            <!-- /LEFTPART -->';
+            <!-- /LEFTPART -->
+            
+            <!-- RIGHTPART -->
+            <div class="arlo_tm_rightpart">
+                <div class="rightpart_inner">';
