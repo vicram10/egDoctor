@@ -44,11 +44,11 @@
                         <div class="leftbox">
                             <div class="about_image_wrap parallax" data-relative-input="true">
                                 <div class="image layer" data-depth="0.1">
-                                    <img src="img/about/550x640.jpg" alt="" />
-                                    <div class="inner" data-img-url="', $themeurl ,'/images/about/1.jpg"></div>
+                                    <img src="', $themeurl ,'/default/images/about/550x640.jpg" alt="" />
+                                    <div class="inner" data-img-url="', $themeurl ,'/default/images/about/1.jpg"></div>
                                 </div>
                                 <div class="border layer" data-depth="0.2">
-                                    <img src="', $themeurl ,'/images/about/550x640.jpg" alt="" />
+                                    <img src="', $themeurl ,'/default/images/about/550x640.jpg" alt="" />
                                     <div class="inner"></div>
                                 </div>
                             </div>

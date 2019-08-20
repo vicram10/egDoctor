@@ -602,9 +602,9 @@ function arlo_tm_kenburn_slider(){
 			delay:7000,
 
 			slides: [
-				{ src: 'img/hero/1.jpg' },
-				{ src: 'img/hero/2.jpg' },
-				{ src: 'img/hero/3.jpg' },
+				{ src: '../images/hero/1.jpg' },
+				{ src: '../images/hero/2.jpg' },
+				{ src: '../images/hero/3.jpg' },
 			]
 
 		});
