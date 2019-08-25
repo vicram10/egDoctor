@@ -25,9 +25,7 @@ if (!empty($_POST)){
     $input_lugar_estudio = !empty($_POST['input_lugar_estudio']) ? $_POST['input_lugar_estudio'] : '';
     $input_titulo_academico = null;
     if (!empty($_POST['input_titulo_academico'])){
-        foreach($_POST['input_titulo_academico'] as $key => $value){
-            $input_titulo_academico = $value.','.$input_titulo_academico;
-        }
+        $input_titulo_academico = implode(',', $_POST['input_titulo_academico']);
     }
     $replace_string = str_replace(',', '', $input_titulo_academico);
     if ($replace_string == '')
