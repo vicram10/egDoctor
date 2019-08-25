@@ -28,6 +28,22 @@
             'include' => 'settings',
             'active' => false,
         ),
+        'params' => array(
+            'menu' => label_parametros_mn,
+            'page_title' => label_parametros_subtitulo,
+            'page_description' => '',
+            'template' => 'params',
+            'include' => 'params',
+            'active' => false,
+        ),
+        'postparams' => array(
+            'menu' => '',
+            'page_title' => '',
+            'page_description' => '',
+            'template' => 'json',
+            'include' => 'params',
+            'active' => false,
+        ),
     );
     //guardamos en un vector el actual
     $context['admin_menu_active'] = $context['admin_menu'][$sa];

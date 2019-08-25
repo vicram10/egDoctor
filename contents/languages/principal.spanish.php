@@ -7,6 +7,8 @@
     const label_hola = 'Hola';
     const label_hola2 = 'Hola soy';
     const label_soy = 'Soy';
+    const label_si = 'Si';
+    const label_no = 'No';
     const label_usuario = 'Usuario';
     const label_password = 'Contrase&ntilde;a';
     const label_pagina_inicio = 'Visitar sitio';
@@ -43,6 +45,13 @@
     const label_tu_correo = 'Tu correo';
     const label_tu_mensaje = 'Cual es tu mensaje?';
     const label_mensajes = 'mensajes';
+    const label_parametros_mn = 'Configuracion de Parametros';
+    const label_parametros_subtitulo = 'Parametros';
+    const label_titulo_web = 'Titulo principal de tu p&aacute;gina';
+    const label_subtitulo_web = 'Titulo secundario para tu p&aacute;gina';
+    const label_enlaces_permanentes = 'Habilitar Enlaces Permantes';
+    const label_enlaces_permanentes_ayuda = 'para que tu web tenga los enlaces permantes y amigable debes habilitar esta opcion, por defecto siempre esta activado.';
+    const label_habilitar_pagina = 'Habilitar tu p&aacute;gina para que puedan ver los visitantes?';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';

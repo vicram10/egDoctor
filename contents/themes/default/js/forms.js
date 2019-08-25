@@ -47,6 +47,29 @@ $(document).ready(function(){
         });
     });
 
+    $('#formParams').submit(function(evento){
+        evento.preventDefault();
+        console.log('procesando el guardado de las parametrizaciones realizadas');
+        //hacemos ahora el trabajo del login
+        var $form = $(this),
+        accion = $form.attr('action'),
+        codigo = "",
+        mensaje = "";
+        var posting = $.post(accion, $form.serialize());
+        posting.done(function (data) {
+            console.log(data);
+            var respuesta = JSON.parse(data);
+            codigo = respuesta['cod'];
+            mensaje = respuesta['mensaje'];
+            if (codigo == 0) {
+                Notificaciones(mensaje, 'OK', true);
+            } else {
+                Notificaciones(mensaje, 'ERROR');
+            }
+            console.log('finalizamos el guardado de las parametrizaciones realizadas');
+        });
+    });
+
     $('#contact_form').submit(function(evento){
         evento.preventDefault();
         console.log('enviando mensaje...');

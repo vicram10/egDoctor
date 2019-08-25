@@ -67,7 +67,17 @@
         }
     }
 
-    //nos permite actualizar nuestra tabla principal acerca de...
+    //nos permite actualizar nuestra tabla principal parametros
+    function load_actualizacion_parametros($registros){
+        global $db, $msgError;
+        foreach($registros as $key => $value){
+            $valor_dato = $value['valor'];
+            $db->ejecutar("UPDATE parametros SET valor = '$valor_dato' WHERE parametro_id = $key");
+            if (!empty($msgError)){ return; }
+        }
+    }
+
+    //nos permite actualizar nuestra tabla de acerca de
     function load_actualizacion_acerca_de($registros){
         global $db, $msgError;
         foreach($registros as $key => $value){
