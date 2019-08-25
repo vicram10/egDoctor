@@ -21,6 +21,16 @@ if (!empty($_POST)){
     $input_nombre = !empty($_POST['input_nombre']) ? $_POST['input_nombre'] : '';
     $input_apellido = !empty($_POST['input_apellido']) ? $_POST['input_apellido'] : '';
     $breve_descripcion = !empty($_POST['input_sobre_mi']) ? $_POST['input_sobre_mi'] : '';
+    $input_interes = !empty($_POST['input_interes']) ? $_POST['input_interes'] : '';
+    $input_titulo_academico = null;
+    if (!empty($_POST['input_titulo_academico'])){
+        foreach($_POST['input_titulo_academico'] as $key => $value){
+            $input_titulo_academico = $value.','.$input_titulo_academico;
+        }
+    }
+    $replace_string = str_replace(',', '', $input_titulo_academico);
+    if ($replace_string == '')
+        $input_titulo_academico = !empty($_POST['input_titulos_grabados']) ? $_POST['input_titulos_grabados'] : '';
 
     if (empty($input_nombre) || empty($input_apellido) || empty($breve_descripcion)){
         $continuamos = false;
@@ -43,6 +53,12 @@ if (!empty($_POST)){
             ),
             'breve_descripcion' => array(
                 'valor' => $breve_descripcion,
+            ),
+            'interes' => array(
+                'valor' => $input_interes,
+            ),
+            'titulos_academicos' => array(
+                'valor' => $input_titulo_academico,
             ),
         );
         //ok, actualizamos

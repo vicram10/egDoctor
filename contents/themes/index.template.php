@@ -56,7 +56,7 @@
                         </div>
                         <div class="rightbox">
                             <div class="arlo_tm_mini_title_holder">
-                                <h4>', label_hola2 ,' ', $context['acerca_de']['nombre_completo']['valor'] ,' and <span class="arlo_tm_animation_text_word"></span></h4>
+                                <h4>', label_hola2 ,' ', $context['acerca_de']['nombre_completo']['valor'] ,' (<span class="arlo_tm_animation_text_word"></span>)</h4>
                             </div>
                             <div class="definition">
                                 <p>', sprintf(label_presentacion_about, $context['acerca_de']['nombre_completo']['valor']
@@ -65,34 +65,10 @@
                             <div class="about_short_contact_wrap">
                                 <ul>
                                     <li>
-                                        <span><label>Birthday:</label> 01.07.1990</span>
+                                        <span><label>', label_intereses ,':</label> ', !empty($context['acerca_de']['interes']['valor']) ? $context['acerca_de']['interes']['valor'] : '' ,'</span>
                                     </li>
                                     <li>
-                                        <span><label>Age:</label> 28</span>
-                                    </li>
-                                    <li>
-                                        <span><label>City:</label> New York, USA</span>
-                                    </li>
-                                    <li>
-                                        <span><label>Interests:</label> Soccer, UFC</span>
-                                    </li>
-                                    <li>
-                                        <span><label>Study:</label> Chicago University</span>
-                                    </li>
-                                    <li>
-                                        <span><label>Degree:</label> Master</span>
-                                    </li>	
-                                    <li>
-                                        <span><label>Website:</label> <a href="#">www.mywebsite.com</a></span>
-                                    </li>
-                                    <li>
-                                        <span><label>Mail:</label> <a href="mailto:example@gmail.com">mymail&#64;gmail.com</a></span>
-                                    </li>
-                                    <li>
-                                        <span><label>Phone:</label> <a href="#">+77 022 177 05 05</a></span>
-                                    </li>
-                                    <li>
-                                        <span><label>Twitter:</label> <a href="#">&#64;myusername</a></span>
+                                        <span><label>', label_estudios ,':</label> Chicago University</span>
                                     </li>
                                 </ul>
                             </div>

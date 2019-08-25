@@ -40,13 +40,23 @@ echo '
                             <div class="form-group row">
 								<label class="col-lg-3 col-form-label">', label_intereses ,':</label>
 								<div class="col-lg-9">
-									<input type="text" class="form-control" placeholder="', label_intereses ,'" name="input_interes" />
+									<input type="text" class="form-control" placeholder="', label_intereses ,'" name="input_interes" value="', !empty($context['acerca_de']['interes']['valor']) ? $context['acerca_de']['interes']['valor'] : '' ,'" />
 									<span class="form-text text-muted">', label_intereses_ayuda ,'</span>
 								</div>
                             </div>
                             
-                            <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>
-
+                            <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>';
+                            if (!empty($context['acerca_de']['titulos_academicos']['valor'])){
+                                echo '
+                                <div class="mb-5">
+                                    <div class="form-group form-group-last row" id="campo_repetir">
+                                        <label class="col-lg-2 col-form-label">', label_titulos_academicos ,':</label> 
+                                        <input type="text" class="form-control text-muted" placeholder="', label_titulo ,'" disabled value="', $context['acerca_de']['titulos_academicos']['valor'] ,'"/> 
+                                        <input type="hidden" name="input_titulos_grabados" value="', $context['acerca_de']['titulos_academicos']['valor'] ,'"/>
+                                    </div>
+                                </div>';
+                            }
+                            echo  '
                             <div id="campo_repetir">
                                 <div class="form-group form-group-last row" id="campo_repetir">
                                     <label class="col-lg-2 col-form-label">', label_titulos_academicos ,':</label>

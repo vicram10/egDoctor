@@ -18,7 +18,10 @@ $(document).ready(function(){
 	arlo_tm_anchor();
 	arlo_tm_contact_form();
 	arlo_tm_owl_carousel();
-	arlo_tm_animate_text();
+	//arlo_tm_animate_text();
+	//vmr textos animados
+	textos_animados();
+	//end textos animados vmr
 	arlo_tm_projects();
 	arlo_tm_miniboxes();
 	arlo_tm_isotope();
