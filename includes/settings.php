@@ -22,6 +22,7 @@ if (!empty($_POST)){
     $input_apellido = !empty($_POST['input_apellido']) ? $_POST['input_apellido'] : '';
     $breve_descripcion = !empty($_POST['input_sobre_mi']) ? $_POST['input_sobre_mi'] : '';
     $input_interes = !empty($_POST['input_interes']) ? $_POST['input_interes'] : '';
+    $input_lugar_estudio = !empty($_POST['input_lugar_estudio']) ? $_POST['input_lugar_estudio'] : '';
     $input_titulo_academico = null;
     if (!empty($_POST['input_titulo_academico'])){
         foreach($_POST['input_titulo_academico'] as $key => $value){
@@ -59,6 +60,9 @@ if (!empty($_POST)){
             ),
             'titulos_academicos' => array(
                 'valor' => $input_titulo_academico,
+            ),
+            'lugar_estudio' => array(
+                'valor' => $input_lugar_estudio,
             ),
         );
         //ok, actualizamos

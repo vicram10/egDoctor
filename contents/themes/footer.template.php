@@ -15,6 +15,9 @@
     <!-- / WRAPPER ALL -->
 
     <!-- SCRIPTS -->
+    <script type="text/javascript">
+        var titulos_aleatorios = "', !empty($context['acerca_de']['titulos_academicos']['valor']) ? $context['acerca_de']['titulos_academicos']['valor'] : '' ,'";
+    </script>
     <script src="', $themeurl ,'/default/js/jquery.js"></script>
     <!--[if lt IE 9]> <script type="text/javascript" src="', $themeurl ,'/default/js/modernizr.custom.js"></script> <![endif]-->
     <!--[if lt IE 10]> <script type="text/javascript" src="', $themeurl ,'/default/js/ie8.js"></script> <![endif]-->	

@@ -18,7 +18,7 @@ $(document).ready(function(){
 function textos_animados(){
 	"use strict";
         var animateSpan	= jQuery('.arlo_tm_animation_text_word');	
-        var textos = [("Freelancer, Web Developer 3").split(',')];
+        var textos = [(titulos_aleatorios).split(',')];
         console.log(textos[0]);
         animateSpan.typed({
                 strings: textos[0],

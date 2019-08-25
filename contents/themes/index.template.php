@@ -19,7 +19,7 @@
                             <h3>', $context['acerca_de']['mi_nombre']['valor']  ,' <span>', $context['acerca_de']['mi_apellido']['valor'] ,'</span></h3>
                         </div>
                         <div class="text_typing">
-                            <p>I\'m a <span class="arlo_tm_animation_text_word"></span></p>
+                            <p>', label_soy ,' <span class="arlo_tm_animation_text_word"></span></p>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                                         <span><label>', label_intereses ,':</label> ', !empty($context['acerca_de']['interes']['valor']) ? $context['acerca_de']['interes']['valor'] : '' ,'</span>
                                     </li>
                                     <li>
-                                        <span><label>', label_estudios ,':</label> Chicago University</span>
+                                        <span><label>', label_estudios ,':</label> ', !empty($context['acerca_de']['lugar_estudio']['valor']) ? $context['acerca_de']['lugar_estudio']['valor'] : '' ,'</span>
                                     </li>
                                 </ul>
                             </div>
@@ -79,6 +79,18 @@
         </div>
     </div>
     <!-- /ABOUT -->
+
+    <!-- SKILLS -->
+    <div class="arlo_tm_section">
+        <div class="arlo_tm_skills_wrap">
+            <div class="container">
+                <div class="inner_wrap">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /SKILLS -->
 
     <!-- CONTACT & FOOTER -->
     <div class="arlo_tm_section" id="contact">

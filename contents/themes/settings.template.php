@@ -95,6 +95,13 @@ echo '
 
                             <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>
                                 
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label">', label_lugar_estudio ,':</label>
+								<div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="', label_lugar_estudio ,'" name="input_lugar_estudio" value="', !empty($context['acerca_de']['lugar_estudio']['valor']) ? $context['acerca_de']['lugar_estudio']['valor'] : '' ,'"/>
+									<span class="form-text text-muted"></span>
+								</div>
+                            </div>
 
                         </div>
                         

@@ -45,3 +45,4 @@ CREATE TABLE `egDoctor`.`mensajes_recibidos` ( `id_mensaje` INT NOT NULL AUTO_IN
 #### 25 de agosto de 2019
 --registrar
 INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('interes', '', ''), ('titulos_academicos', '', '');
+INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('lugar_estudio', '', '');

@@ -6,6 +6,7 @@
     const label_cerrar_sesion_ayuda = 'Para salir de tu panel de Administracion y cerrar tu sesion de usuario.';
     const label_hola = 'Hola';
     const label_hola2 = 'Hola soy';
+    const label_soy = 'Soy';
     const label_usuario = 'Usuario';
     const label_password = 'Contrase&ntilde;a';
     const label_pagina_inicio = 'Visitar sitio';
@@ -19,6 +20,7 @@
     const label_apellido_ayuda = 'Por favor coloque su apellido completo en este campo.';
     const label_sobre_mi = 'Breve descripcion de quien soy';
     const label_sobre_mi_ayuda = 'Debes escribir brevemente sobre quien sos, de tal manera a que puedan conocerte m&aacute;s. Puede usar etiquetas html para resaltar texto o subrayar o cursiva. Ejemplo: <code>&lt;b&gt;Entusiasta&lt;/b&gt;</code> quedar&iacute;a de la siguiente forma <b>Entusiasta</b>';
+    const label_lugar_estudio = 'Lugar donde realiz&oacute; sus estudios';
     const label_mantenimiento_titulo = 'P&aacute;gina en Mantenimiento';
     const label_mantenimiento_descripcion = 'La p&aacute;gina esta momentaneamente inhabilitada,<br/> 
     puede iniciar sesion en caso que tenga un usuario y

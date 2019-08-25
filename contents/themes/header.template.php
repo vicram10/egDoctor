@@ -64,7 +64,7 @@
             <div class="arlo_tm_mobile_menu_wrap">
                 <div class="mob_menu">
                     <ul class="anchor_nav">
-                        <li><a href="', $rooturl ,'">', label_portal ,'</a></li>
+                        <li><a href="#home">', label_portal ,'</a></li>
                         <li><a href="#about">', label_about ,'</a></li>
                         <li><a href="#contact">', label_contacto ,'</a></li>';
 
@@ -94,7 +94,7 @@
                     </div>
                     <div class="menu_list_wrap">
                         <ul class="anchor_nav">
-                            <li><a href="', $rooturl ,'">', label_portal ,'</a></li>
+                            <li><a href="#home">', label_portal ,'</a></li>
                             <li><a href="#about">', label_about ,'</a></li>
                             <li><a href="#contact">', label_contacto ,'</a></li>';
                             //estamos conectados?
