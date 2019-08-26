@@ -44,6 +44,22 @@
             'include' => 'params',
             'active' => false,
         ),
+        'messages' => array(
+            'menu' => label_mensajes_mn,
+            'page_title' => label_mensaje_subtitulo,
+            'page_description' => '',
+            'template' => 'messages',
+            'include' => 'messages',
+            'active' => false,
+        ),
+        'messages-json' => array(
+            'menu' => '',
+            'page_title' => '',
+            'page_description' => '',
+            'template' => 'json',
+            'include' => 'messagesJSON',
+            'active' => false,
+        ),
     );
     //guardamos en un vector el actual
     $context['admin_menu_active'] = $context['admin_menu'][$sa];

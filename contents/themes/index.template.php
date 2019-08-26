@@ -119,7 +119,7 @@
                                         <input id="email" type="email" placeholder="', label_tu_correo ,'" name="input_correo"/>
                                     </div>
                                     <div class="wrap">
-                                        <textarea id="message" placeholder="', label_tu_mensaje ,'" name="input_mensaje"></textarea>
+                                        <input type="text" id="message" placeholder="', label_tu_mensaje ,'" name="input_mensaje" pattern="[^\'\x22]+" title="', error_entrada_invalida ,'"/>
                                     </div>
                                     <div class="arlo_tm_button">
                                         <a id="enviar_mensaje" href="#"><span>', btn_enviar_mensaje ,'</span></a>

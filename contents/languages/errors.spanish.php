@@ -5,3 +5,4 @@
     const error_no_conectado = 'Usuario no conectado!!!';
     const error_campos_obligatorios = 'No puede dejar vacios los campos: %1$s';
     const error_no_envio_mensaje = 'No ha especificado los campos obligatorios, el mensaje no ha sido enviado!!!';
+    const error_entrada_invalida = 'Entrada invalida!!!';

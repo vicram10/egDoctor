@@ -52,6 +52,8 @@
     const label_enlaces_permanentes = 'Habilitar Enlaces Permantes';
     const label_enlaces_permanentes_ayuda = 'para que tu web tenga los enlaces permantes y amigable debes habilitar esta opcion, por defecto siempre esta activado.';
     const label_habilitar_pagina = 'Habilitar tu p&aacute;gina para que puedan ver los visitantes?';
+    const label_mensajes_mn = 'Buz&oacute;n de Mensajes';
+    const label_mensaje_subtitulo = 'Mensajes Recibidos';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';
@@ -66,3 +68,5 @@
     const mensaje_iniciado_correctamente = 'Inicio de Sesi&oacute;n de forma correcta.';
     const mensaje_guardado_correctamente = 'Registro guardado de forma correcta.';
     const mensaje_enviado_correctamente = 'Mensaje enviado de forma correcta, en la brevedad posible me pondr&eacute; en contacto.';
+    const mensaje_consulta_vacia = 'No se encuentran registros';
+    const mensaje_procesando = 'Procesando, espere...';

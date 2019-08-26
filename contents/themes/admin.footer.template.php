@@ -75,6 +75,7 @@ echo '
 		<!--end::Global Theme Bundle -->
 		<!--begin::Page Vendors(used by this page) -->
 		<script src=".',$themeurl,'/dashboard/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+		<script src="', $themeurl ,'/dashboard/vendors/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
 		<script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script>
 		<script src=".',$themeurl,'/dashboard/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script>
 		<!--end::Page Vendors -->
@@ -83,6 +84,7 @@ echo '
 		<script src="',$themeurl,'/default/js/forms.js" type="text/javascript"></script>
 		<script src="',$themeurl,'/default/js/principal.js" type="text/javascript"></script>
 		<script src="',$themeurl,'/default/js/sweetalert.min.js" type="text/javascript"></script>
+		<script src="',$themeurl,'/default/js/tables.js" type="text/javascript"></script>
 		', !empty($context['footer_html']) ? $context['footer_html'] : '' ,'
 		<!--end::Page Scripts -->
     </body> 
