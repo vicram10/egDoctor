@@ -13,7 +13,8 @@ $mensajes = $db->query(
             c.mensaje, 
             c.fecha_mensaje,
             c.marcar_leido
-    FROM mensajes_recibidos c",
+    FROM mensajes_recibidos c
+    ORDER BY c.marcar_leido ASC, c.id_mensaje",
     array()
 );
 $context['mensajes_recibidos'] = array();

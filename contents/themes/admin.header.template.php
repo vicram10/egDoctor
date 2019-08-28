@@ -12,21 +12,22 @@ echo '
         <meta charset="utf-8" />
         <title>', $context['admin_menu_active']['menu'] ,'</title>
         <meta name="description" content="', $context['page_description'] ,'">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <!--begin::Page Vendors Styles(used by this page) -->
         <link href="', $themeurl ,'/dashboard/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-        <!--end::Page Vendors Styles -->
+		<!--end::Page Vendors Styles -->
+		
         <!--begin::Global Theme Styles(used by all pages) -->
         <link href="', $themeurl ,'/dashboard/vendors/global/vendors.bundle.css" rel="stylesheet" type="text/css" />
         <link href="', $themeurl ,'/dashboard/css/enterprise/style.bundle.css" rel="stylesheet" type="text/css" />
-        <!--end::Global Theme Styles -->
-        <!--begin::Layout Skins(used by all pages) -->
-        <!--end::Layout Skins -->
-		<link rel="shortcut icon" href="', $themeurl ,'/default/images/logo.png" type="image/png" />
+		<!--end::Global Theme Styles -->
 		
+        <!--begin::Layout Skins(used by all pages) -->
+		<link rel="shortcut icon" href="', $themeurl ,'/default/images/logo.png" type="image/png" />
+
 		<!--begin::Page Vendors Styles(used by this page) -->
 		<link href="', $themeurl ,'/dashboard/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-
 		<!--end::Page Vendors Styles -->
     </head>
 
