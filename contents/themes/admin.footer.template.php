@@ -46,7 +46,7 @@ echo '
             });
         </script>
 		<!--end::Fonts -->
-		
+
         <!-- begin::Global Config(global config for global JS sciprts) -->
 		<script>
 			var KTAppOptions = {

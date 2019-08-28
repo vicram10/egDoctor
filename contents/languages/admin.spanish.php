@@ -10,3 +10,10 @@
     const configuraciones_descripcion = 'Secci&oacute;n principal donde podras realizar cualquier tipo de configuracion de la web.';
     const configuraciones_titulo2 = 'Configuraciones Generales';
     const configuraciones_about = 'Acerca de mi';
+
+    //buzon de mensajes
+    const col_nombre = 'Nombre';
+    const col_correo = 'Correo';
+    const col_mensaje = 'Mensaje Recibido';
+    const col_fecha = 'Fecha';
+    const col_leido = 'Le&iacute;do';

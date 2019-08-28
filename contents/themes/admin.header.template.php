@@ -22,7 +22,12 @@ echo '
         <!--end::Global Theme Styles -->
         <!--begin::Layout Skins(used by all pages) -->
         <!--end::Layout Skins -->
-        <link rel="shortcut icon" href="', $themeurl ,'/default/images/logo.png" type="image/png" />
+		<link rel="shortcut icon" href="', $themeurl ,'/default/images/logo.png" type="image/png" />
+		
+		<!--begin::Page Vendors Styles(used by this page) -->
+		<link href="', $themeurl ,'/dashboard/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Vendors Styles -->
     </head>
 
     <!-- end::Head -->

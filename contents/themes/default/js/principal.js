@@ -1,18 +1,4 @@
 $(document).ready(function(){
-        //datatables
-        $('table.display').DataTable({
-                "responsive": true,
-                "language": {
-                        "url": "../default/js/Spanish.json"
-                        }
-        });
-        //tabla ordenado de manera descendente, se toma la 2 columna
-        $('table.orden_descendente').DataTable({
-                "language": {
-                        "url": "../default/js/Spanish.json"
-                        },
-                "order": [[ 1, "desc" ]], //or asc
-        });
         //agregar filas
         $('#AgregarFilas').click(function(){
                 var contador = 0;
