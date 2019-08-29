@@ -70,7 +70,7 @@
         $context['page_title'] = $context['admin_menu_active']['page_title'];
         $context['page_description'] = $context['admin_menu_active']['page_description'];
         //cuantos mensajes tenemos
-        $context['mensajes_no_leidos'] = user_cantidad_mensajes_recibidos('NO');
+        $context['cant_mensajes_no_leidos'] = user_cantidad_mensajes_recibidos('NO');
     }else{
         $load_header = false;
         $load_footer = false;
