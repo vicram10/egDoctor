@@ -15,8 +15,12 @@ $mensajes = $db->query(
             c.marcar_leido
     FROM mensajes_recibidos c
     ORDER BY c.marcar_leido ASC, c.id_mensaje",
-    array()
+    array(
+        ':leido' => 'NO',
+    )
 );
+$context['mensajes_leidos'] = false;
+$context['mensajes_no_leidos'] = false;
 $context['mensajes_recibidos'] = array();
 if (count($mensajes) > 0){
     foreach($mensajes as $key => $value){
@@ -27,5 +31,9 @@ if (count($mensajes) > 0){
             'fecha' => load_formato_fecha('blog', $value['fecha_mensaje']),
             'leido' => $value['marcar_leido'],
         );
+        if ($value['marcar_leido'] == 'SI')
+            $context['mensajes_leidos'] = true;
+        if ($value['marcar_leido'] == 'NO')
+            $context['mensajes_no_leidos'] = true;
     }
 }

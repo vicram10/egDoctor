@@ -54,6 +54,8 @@
     const label_habilitar_pagina = 'Habilitar tu p&aacute;gina para que puedan ver los visitantes?';
     const label_mensajes_mn = 'Buz&oacute;n de Mensajes';
     const label_mensaje_subtitulo = 'Mensajes Recibidos';
+    const label_mensajes_leidos = 'Mensajes Leidos';
+    const label_mensajes_no_leidos = 'Mensajes no Leidos';
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';
@@ -70,3 +72,5 @@
     const mensaje_enviado_correctamente = 'Mensaje enviado de forma correcta, en la brevedad posible me pondr&eacute; en contacto.';
     const mensaje_consulta_vacia = 'No se encuentran registros';
     const mensaje_procesando = 'Procesando, espere...';
+    const mensaje_no_existe_leidos = 'No existen mensajes leidos';
+    const mensaje_no_existe_no_leidos = 'No existen mensajes sin leer';
