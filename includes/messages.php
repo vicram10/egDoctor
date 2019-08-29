@@ -26,7 +26,7 @@ if (count($mensajes) > 0){
     foreach($mensajes as $key => $value){
         $context['mensajes_recibidos'][$value['id_mensaje']] = array(
             'nombre' => $value['nombre'],
-            'correo' => $value['correo'],
+            'correo' => '<a href="mailto:'.$value['correo'].'"><i class="flaticon-multimedia btn-lg" data-skin="dark" data-toggle="kt-tooltip" data-placement="right" title="'. $value['correo'] .'"></i></a>',
             'mensaje' => htmlspecialchars($value['mensaje']),
             'fecha' => load_formato_fecha('blog', $value['fecha_mensaje']),
             'leido' => $value['marcar_leido'],
