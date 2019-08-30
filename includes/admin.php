@@ -52,6 +52,14 @@
             'include' => 'messages',
             'active' => false,
         ),
+        'markread' => array(
+            'menu' => '',
+            'page_title' => '',
+            'page_description' => '',
+            'template' => 'json',
+            'include' => 'messages',
+            'active' => false,
+        ),
     );
     //guardamos en un vector el actual
     $context['admin_menu_active'] = $context['admin_menu'][$sa];

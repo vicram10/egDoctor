@@ -46,6 +46,11 @@ echo '
             });
         </script>
 		<!--end::Fonts -->
+		
+		<script type="text/javascript">
+			var rooturl = "', $rooturl ,'";
+			var scripturl = "', $scripturl ,'";
+		</script>
 
         <!-- begin::Global Config(global config for global JS sciprts) -->
 		<script>

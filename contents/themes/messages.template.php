@@ -13,6 +13,7 @@ echo '
                 <thead>
                     <tr class="uppercase kt-shape-font-color-3  kt-shape-bg-color-3">
                         <th>#</th>
+                        <th>&nbsp;</th>
                         <th>', col_nombre ,'</th>
                         <th>', col_correo ,'</th>
                         <th>', col_mensaje ,'</th>
@@ -23,6 +24,7 @@ echo '
                 <tfoot>
                     <tr class="uppercase kt-shape-font-color-3  kt-shape-bg-color-3">
                         <th>#</th>
+                        <th>&nbsp;</th>
                         <th>', col_nombre ,'</th>
                         <th>', col_correo ,'</th>
                         <th>', col_mensaje ,'</th>
@@ -36,6 +38,11 @@ echo '
                         echo '
                         <tr ', $value['leido'] == 'NO' ? 'class="kt-shape-font-color-1  kt-shape-bg-color-1"' : '' ,'>
                             <td>', $key ,'</td>
+                            <td class="text-center">
+                                <a href="javascript:;" name="btnMarcarLeido" class="btn btn-info btn-sm" data-id="', $key ,'" data-status="SI" data-toggle="kt-tooltip" data-placement="right" title="', label_marcar_leido ,'" data-skin="dark">
+                                    <i class="flaticon-multimedia"></i>
+                                </a>
+                            </td>
                             <td>', $value['nombre'] ,'</td>
                             <td>', $value['correo'] ,'</td>
                             <td>', $value['mensaje'] ,'</td>
@@ -71,6 +78,7 @@ echo '
                 <thead>
                     <tr class="uppercase kt-shape-font-color-3  kt-shape-bg-color-3">
                         <th>#</th>
+                        <th>&nbsp;</th>
                         <th>', col_nombre ,'</th>
                         <th>', col_correo ,'</th>
                         <th>', col_mensaje ,'</th>
@@ -81,6 +89,7 @@ echo '
                 <tfoot>
                     <tr class="uppercase kt-shape-font-color-3  kt-shape-bg-color-3">
                         <th>#</th>
+                        <th>&nbsp;</th>
                         <th>', col_nombre ,'</th>
                         <th>', col_correo ,'</th>
                         <th>', col_mensaje ,'</th>
@@ -94,6 +103,11 @@ echo '
                         echo '
                         <tr ', $value['leido'] == 'NO' ? 'class="kt-shape-font-color-1  kt-shape-bg-color-1"' : '' ,'>
                             <td>', $key ,'</td>
+                            <td class="text-center">
+                                <a href="javascript:;" name="btnMarcarLeido" class="btn btn-danger btn-sm" data-id="', $key ,'" data-status="NO" data-toggle="kt-tooltip" data-placement="right" title="', label_marcar_no_leido ,'" data-skin="dark">
+                                    <i class="flaticon-multimedia"></i>
+                                </a>
+                            </td>
                             <td>', $value['nombre'] ,'</td>
                             <td>', $value['correo'] ,'</td>
                             <td>', $value['mensaje'] ,'</td>

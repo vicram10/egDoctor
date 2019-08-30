@@ -12,6 +12,30 @@ $(document).ready(function(){
                 $('#campo_'+nuevo_id).find('button').attr('onclick', 'EliminarFila(\'campo_'+nuevo_id+'\')');
                 $('#campo_'+nuevo_id).find('button').removeClass('kt-hidden');
         });
+
+        //boton de marcar como leido
+        $('a[name="btnMarcarLeido"]').click(function(evento){
+                var id_mensaje = $(this).data('id');
+                var estado = $(this).data('status');
+                console.log('ini-> marcar como leido id-'+id_mensaje);
+                //hacemos ahora el trabajo del login
+                accion = scripturl + '?route=admin&sa=markread',
+                codigo = "",
+                mensaje = "";
+                var posting = $.get(accion, { message_id: id_mensaje, status: estado});
+                posting.done(function (data) {
+                        console.log(data);
+                        var respuesta = JSON.parse(data);
+                        codigo = respuesta['cod'];
+                        mensaje = respuesta['mensaje'];
+                        if (codigo == 0) {
+                                Notificaciones(mensaje, 'OK', true);
+                        } else {
+                                Notificaciones(mensaje, 'ERROR');
+                        }
+                        console.log('fin-> marcar como leido id-'+id_mensaje);
+                });
+        });
 });
 
 //textos animados

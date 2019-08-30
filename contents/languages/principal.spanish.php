@@ -56,6 +56,9 @@
     const label_mensaje_subtitulo = 'Mensajes Recibidos';
     const label_mensajes_leidos = 'Mensajes Leidos';
     const label_mensajes_no_leidos = 'Mensajes no Leidos';
+    const label_marcar_leido = 'Marcar como Le&iacute;do';
+    const label_marcar_no_leido = 'Marcar como NO Le&iacute;do'; 
+
     //botones
     const btn_iniciar = 'Iniciar';
     const btn_guardar = 'Guardar';
