@@ -41,7 +41,7 @@
     const label_instagram = 'Instagram';
     const label_linkedin = 'LinkedIn';
     const label_ejemplo_red_social = 'Ejemplo: <code>%1$s</code>';
-    const label_about_descripcion = 'Informacion Principal sobre mi.';
+    const label_about_descripcion = 'Informacion principal sobre mi.';
     const label_contacto = 'Contacto';
     const label_contacto2 = 'Ponte en contacto conmigo';
     const label_contacto3 = 'Estar en contacto';
