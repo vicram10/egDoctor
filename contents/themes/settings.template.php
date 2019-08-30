@@ -103,6 +103,38 @@ echo '
 								</div>
                             </div>
 
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label">', label_facebook ,':</label>
+								<div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="', label_facebook ,'" name="input_facebook" value="', !empty($context['acerca_de']['facebook']['valor']) ? $context['acerca_de']['facebook']['valor'] : '' ,'"/>
+									<span class="form-text text-muted">', sprintf(label_ejemplo_red_social, 'https://www.facebook.com/vmrm10') ,'</span>
+								</div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label">', label_twitter ,':</label>
+								<div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="', label_twitter ,'" name="input_twitter" value="', !empty($context['acerca_de']['twitter']['valor']) ? $context['acerca_de']['twitter']['valor'] : '' ,'"/>
+									<span class="form-text text-muted">', sprintf(label_ejemplo_red_social, 'https://twitter.com/vicram_10') ,'</span>
+								</div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label">', label_instagram ,':</label>
+								<div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="', label_instagram ,'" name="input_instagram" value="', !empty($context['acerca_de']['instagram']['valor']) ? $context['acerca_de']['instagram']['valor'] : '' ,'"/>
+									<span class="form-text text-muted">', sprintf(label_ejemplo_red_social, 'https://www.instagram.com/vicram10/') ,'</span>
+								</div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-form-label">', label_linkedin ,':</label>
+								<div class="col-lg-9">
+                                    <input type="text" class="form-control" placeholder="', label_linkedin ,'" name="input_linkedin" value="', !empty($context['acerca_de']['linkedin']['valor']) ? $context['acerca_de']['linkedin']['valor'] : '' ,'"/>
+									<span class="form-text text-muted">', sprintf(label_ejemplo_red_social, 'https://www.linkedin.com/in/victor-ramirez-557718131/') ,'</span>
+								</div>
+                            </div>
+
                         </div>
                         
                         <!-- end:: Acerca de... -->

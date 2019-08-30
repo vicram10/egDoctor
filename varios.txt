@@ -46,3 +46,8 @@ CREATE TABLE `egDoctor`.`mensajes_recibidos` ( `id_mensaje` INT NOT NULL AUTO_IN
 --registrar
 INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('interes', '', ''), ('titulos_academicos', '', '');
 INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('lugar_estudio', '', '');
+
+#### 29 de agosto de 2019
+INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('twitter', '', ''), ('facebook', '', '');
+INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('instagram', '', '');
+INSERT INTO `acerca_de` (`tipo_registro`, `valor_dato`, `fecha`) VALUES ('linkedin', '', '');

@@ -36,6 +36,11 @@
     const label_portal = 'Portal';
     const label_about = 'Acerca de';
     const label_about2 = 'Acerca de mi';
+    const label_twitter = 'Twitter';
+    const label_facebook = 'Facebook';
+    const label_instagram = 'Instagram';
+    const label_linkedin = 'LinkedIn';
+    const label_ejemplo_red_social = 'Ejemplo: <code>%1$s</code>';
     const label_about_descripcion = 'Informacion Principal sobre mi.';
     const label_contacto = 'Contacto';
     const label_contacto2 = 'Ponte en contacto conmigo';

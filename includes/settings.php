@@ -23,6 +23,11 @@ if (!empty($_POST)){
     $breve_descripcion = !empty($_POST['input_sobre_mi']) ? $_POST['input_sobre_mi'] : '';
     $input_interes = !empty($_POST['input_interes']) ? $_POST['input_interes'] : '';
     $input_lugar_estudio = !empty($_POST['input_lugar_estudio']) ? $_POST['input_lugar_estudio'] : '';
+    $facebook = !empty($_POST['input_facebook']) ? $_POST['input_facebook'] : '';
+    $twitter = !empty($_POST['input_twitter']) ? $_POST['input_twitter'] : '';
+    $instagram = !empty($_POST['input_instagram']) ? $_POST['input_instagram'] : '';
+    $linkedin = !empty($_POST['input_linkedin']) ? $_POST['input_linkedin'] : '';
+
     $input_titulo_academico = null;
     if (!empty($_POST['input_titulo_academico'])){
         $input_titulo_academico = implode(',', $_POST['input_titulo_academico']);
@@ -61,6 +66,18 @@ if (!empty($_POST)){
             ),
             'lugar_estudio' => array(
                 'valor' => $input_lugar_estudio,
+            ),
+            'facebook' => array(
+                'valor' => $facebook,
+            ),
+            'twitter' => array(
+                'valor' => $twitter,
+            ),
+            'instagram' => array(
+                'valor' => $instagram,
+            ),
+            'linkedin' => array(
+                'valor' => $linkedin,
             ),
         );
         //ok, actualizamos

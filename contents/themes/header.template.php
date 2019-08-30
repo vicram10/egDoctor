@@ -110,11 +110,24 @@
                     </div>
                     <div class="leftpart_bottom">
                         <div class="social_wrap">
-                            <ul>
-                                <li><a href="#"><i class="xcon-facebook"></i></a></li>
-                                <li><a href="#"><i class="xcon-twitter"></i></a></li>
-                                <li><a href="#"><i class="xcon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="xcon-instagram"></i></a></li>
+                            <ul>';
+                                if (!empty($context['acerca_de']['facebook']['valor'])){
+                                    echo '
+                                    <li><a href="', $context['acerca_de']['facebook']['valor'] ,'" target="_blank"><i class="xcon-facebook"></i></a></li>';
+                                }
+                                if (!empty($context['acerca_de']['twitter']['valor'])){
+                                    echo '
+                                    <li><a href="', $context['acerca_de']['twitter']['valor'] ,'" target="_blank"><i class="xcon-twitter"></i></a></li>';
+                                }
+                                if (!empty($context['acerca_de']['instagram']['valor'])){
+                                    echo '
+                                    <li><a href="', $context['acerca_de']['instagram']['valor'] ,'" target="_blank"><i class="xcon-instagram"></i></a></li>';
+                                }
+                                if (!empty($context['acerca_de']['linkedin']['valor'])){
+                                    echo '
+                                    <li><a href="', $context['acerca_de']['linkedin']['valor'] ,'" target="_blank"><i class="xcon-linkedin"></i></a></li>';
+                                }
+                            echo '
                             </ul>
                         </div>
                     </div>
