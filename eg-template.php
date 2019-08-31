@@ -6,10 +6,10 @@ function template_portlet_head($icon = '', $class_icon = '', $title = '', $class
     echo '
     <div class="kt-portlet__head">
         <div class="kt-portlet__head-label">
-            <span class="kt-portlet__head-icon', $class_icon ,'">
+            <span class="kt-portlet__head-icon ', $class_icon ,'">
                 <i class="', $icon ,'"></i>
             </span>
-            <h3 class="kt-portlet__head-title', $class_title ,'">
+            <h3 class="kt-portlet__head-title ', $class_title ,'">
                 ', $title ,'
             </h3>
         </div>

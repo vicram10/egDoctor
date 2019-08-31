@@ -3,7 +3,7 @@ if (!defined('eGeek')) die ('Acceso prohibido');
 //tenemos algun mensaje?
 echo '
 <div class="kt-portlet col-lg-12">
-    ', template_portlet_head('flaticon-mail', '', label_mensajes_no_leidos, '') ,'
+    ', template_portlet_head('flaticon-mail', 'text-danger', label_mensajes_no_leidos, 'text-danger') ,'
     <div class="kt-portlet__body">
         <div class="kt-portlet__content">';
         if ($context['mensajes_no_leidos']){
@@ -68,7 +68,7 @@ echo '
 //mensajes leidos
 echo '
 <div class="kt-portlet col-lg-12">
-    ', template_portlet_head('flaticon-envelope', '', label_mensajes_leidos, '') ,'
+    ', template_portlet_head('flaticon-envelope', 'text-success', label_mensajes_leidos, 'text-success') ,'
     <div class="kt-portlet__body">
         <div class="kt-portlet__content">';
         if ($context['mensajes_leidos']){

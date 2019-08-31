@@ -1,5 +1,5 @@
 body{
-  background: #F6EAB0/*#e2e5ec*/ !important;
+  background: #54C3BD /*#F6EAB0/*#e2e5ec*/ !important;
 }
 .kt-error-v5 {
   background-position: center;
@@ -8,7 +8,7 @@ body{
   background-size: cover; }
 
   .kt-error-v5{
-    background-image: url(../images/online-medicine2.jpg);background-size: 40%;background-position: center right;
+    background-image: url(../images/online-medicine.jpg);background-size: 40%;background-position: center right;
     }
 
   .kt-error-v5 .kt-error_container .kt-error_title > h1 {
