@@ -60,6 +60,14 @@
             'include' => 'messages',
             'active' => false,
         ),
+        'media' => array(
+            'menu' => label_media_mn,
+            'page_title' => label_media_titulo,
+            'page_description' => '',
+            'template' => 'media',
+            'include' => 'media',
+            'active' => false,
+        ),
     );
     //guardamos en un vector el actual
     $context['admin_menu_active'] = $context['admin_menu'][$sa];

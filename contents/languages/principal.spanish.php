@@ -63,6 +63,8 @@
     const label_mensajes_no_leidos = 'Mensajes no Leidos';
     const label_marcar_leido = 'Marcar como Le&iacute;do';
     const label_marcar_no_leido = 'Marcar como NO Le&iacute;do'; 
+    const label_media_mn = 'Biblioteca de Imagenes';
+    const label_media_titulo = 'Media';
 
     //botones
     const btn_iniciar = 'Iniciar';
