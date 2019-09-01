@@ -90,6 +90,7 @@ echo '
 		<script src="',$themeurl,'/default/js/principal.js" type="text/javascript"></script>
 		<script src="',$themeurl,'/default/js/sweetalert.min.js" type="text/javascript"></script>
 		<script src="',$themeurl,'/default/js/tables.js" type="text/javascript"></script>
+		<script src="',$themeurl,'/default/js/dropzone.js" type="text/javascript"></script>
 		', !empty($context['footer_html']) ? $context['footer_html'] : '' ,'
 		<!--end::Page Scripts -->
     </body> 

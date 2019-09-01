@@ -50384,7 +50384,10 @@ var Dropzone = function (_Emitter) {
         // Called just before the file is sent. Gets the `xhr` object as second
         // parameter, so you can modify it (for example to add a CSRF token) and a
         // `formData` object to add additional information.
-        sending: function sending() {},
+        sending: function sending(file, xhr, formData) {
+			var prefix = $('#dropzone-perfil').data('prefix');
+			formData.append('input_prefijo', prefix);
+		},
         sendingmultiple: function sendingmultiple() {},
 
 

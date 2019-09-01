@@ -65,6 +65,8 @@
     const label_marcar_no_leido = 'Marcar como NO Le&iacute;do'; 
     const label_media_mn = 'Biblioteca de Imagenes';
     const label_media_titulo = 'Media';
+    const label_media_titulo2 = 'Configurando Imagenes';
+    const label_media_perfil = 'Imagen del Perfil';
 
     //botones
     const btn_iniciar = 'Iniciar';
