@@ -36,6 +36,13 @@ $(document).ready(function(){
                         console.log('fin-> marcar como leido id-'+id_mensaje);
                 });
         });
+
+        $('input[type=file]').change(function(){
+                var filename = jQuery(this).val().split('\\').pop();
+                console.log(jQuery(this));
+                console.log(filename);
+                $('#label_imagen_perfil').html(filename);
+        });
 });
 
 //textos animados

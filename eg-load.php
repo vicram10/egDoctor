@@ -152,3 +152,19 @@
         }
         return $return;
     }
+
+    //para leer un directorio y sus subdirectorios/archivos
+    function load_leer_biblioteca(){
+        global $rooturl, $context;
+        $actual_directorio = opendir(DirContent . '/upload/');
+        while($archivo = readdir($actual_directorio)){
+            if ($archivo != '.' && $archivo != '..' && $archivo != 'index.php'){
+                $identificador = explode('_', $archivo);
+                $context['biblioteca'][$identificador[0]] = array(
+                    'nombre' => $archivo,
+                    'url' => $rooturl.'contents/upload/'.$archivo,
+                );
+            }
+        }
+        return isset($context['biblioteca']) ? $context['biblioteca'] : array();//salto error en la mackbook en esta linea
+    }

@@ -37,5 +37,7 @@
     user_obtener_datos();
     //datos importantes de la web
     load_datos_web();
+    //leemos la biblioteca del usuario
+    load_leer_biblioteca();
     //capturamos los valores que vienen por parametro para saber que archivo incluimos y que template
     load_main();

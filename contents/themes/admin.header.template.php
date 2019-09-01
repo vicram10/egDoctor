@@ -29,6 +29,7 @@ echo '
 		<!--begin::Page Vendors Styles(used by this page) -->
 		<link href="', $themeurl ,'/dashboard/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="', $themeurl ,'/default/css/dropzone.css" rel="stylesheet" type="text/css" />
+		
 		<!--end::Page Vendors Styles -->
     </head>
 

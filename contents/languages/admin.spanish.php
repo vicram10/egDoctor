@@ -21,3 +21,4 @@
     //media
     const media_drop_imagenes = 'Arrastrar/Soltar la imagen en este lugar, o dar click aqui para buscar la imagen.';
     const media_drop_imagenes_ayuda = 'De esta manera podras subir dinamicamente la imagen al servidor. Las imagenes deben tener un <b>peso maximo de 1mb</b>';
+    const media_subir = 'Buscar Imagen';

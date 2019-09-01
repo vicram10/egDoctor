@@ -11,13 +11,22 @@ echo '
             <form class="kt-form kt-form--label-right" action="', $scripturl ,'?route=admin&sa=media" id="dropzone-perfil" method="post" enctype="multipart/form-data">
                 <div class="kt-portlet__body">
                     <div class="form-group row">
-                        <label class="col-form-label col-lg-3 col-sm-12">', label_media_perfil ,'</label>
+                        <label class="col-form-label col-lg-3 col-sm-12" name="">', label_media_perfil ,'</label>
                         <div class="col-lg-9 col-md-9 col-sm-12">
-                            <input type="file" name="file" />
+                            <span class="imagen_perfil">
+                                <label for="imagen_perfil"><i class="fa fa-address-card"></i> <span id="label_imagen_perfil">', media_subir ,'</span></label>
+                                <input type="file" id="imagen_perfil" name="file" />
+                                <input type="hidden" name="input_prefijo" value="perfil" accept="image/*" />
+                                &nbsp;&nbsp;<button type="submit" class="btn btn-warning"><i class="flaticon-upload"></i> ', btn_agregar ,'</button>
+                            </span>';
+                            if (!empty($context['biblioteca']['perfil']['url'])){
+                                echo '
+                                <p>
+                                    <img width="37" height="37" src="', $context['biblioteca']['perfil']['url'] ,'" alt="', $context['biblioteca']['perfil']['nombre'] ,'" />
+                                </p>';
+                            }
+                        echo '
                         </div>
-                    </div>
-                    <div class="form-actions">
-                        <input type="submit" id="btnAgregarSucursal" class="btn blue" value="', btn_agregar ,'" />
                     </div>
                 </div>
             </form>
