@@ -24,7 +24,8 @@
         //datos principales
         $webtitle = $context['parametros'][100]['valor'];
         $websubtitle = $context['parametros'][104]['valor'];
-        //las url principales
+        //las url principales, vamos a ver para usar de esa manera
+        //(isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
         $rooturl = $context['parametros'][101]['valor'];
         $scripturl = $context['parametros'][102]['valor'];
         $themeurl = $context['parametros'][103]['valor'];
