@@ -26,7 +26,7 @@
     }
 
     function user_iniciar_sesion($usuario, $password){
-        global $session_id, $db;
+        global $session_id, $db, $context;
         $mensaje_retorno = "";
         //hacemos la encriptacion del password para poder hacer las verificaciones
         $password_hash = load_encriptar($password);
@@ -50,7 +50,7 @@
                 $_SESSION[$session_id.'_nombre'] = $consulta_usuario[0]['nombre_usuario'];
                 $_SESSION[$session_id.'_perfil_id'] = $consulta_usuario[0]['perfil_id'];
                 $_SESSION[$session_id.'_perfil'] = $consulta_usuario[0]['descripcion'];
-                $_SESSION[$session_id.'_imagen'] = '';
+                $_SESSION[$session_id.'_imagen'] = !empty($context['biblioteca'][$consulta_usuario[0]['usuario_id']]['perfil']['url']) ? $context['biblioteca'][$consulta_usuario[0]['usuario_id']]['perfil']['url'] : '' ;
                 $_SESSION[$session_id.'_conectado'] = true;
                 $_SESSION[$session_id.'_es_administrador'] = $consulta_usuario[0]['perfil_id'] == 1 ? true : false;
                 $mensaje_retorno = 'OK|'.mensaje_iniciado_correctamente;
