@@ -18,7 +18,6 @@
             'nombre' => !empty($_SESSION[$session_id.'_nombre']) ? $_SESSION[$session_id.'_nombre'] : label_visitante,
             'perfil' => !empty($_SESSION[$session_id.'_perfil']) ? $_SESSION[$session_id.'_perfil'] : '',
             'perfil_id' => !empty($_SESSION[$session_id.'_perfil_id']) ? (int) $_SESSION[$session_id.'_perfil_id'] : 0,
-            'imagen' => !empty($_SESSION[$session_id.'_imagen']) ? (int) $_SESSION[$session_id.'_imagen'] : $themeurl.'/default/images/default-avatar.jpg',
             'conectado' => !empty($_SESSION[$session_id.'_conectado']) ? $_SESSION[$session_id.'_conectado'] : false,
             'es_administrador' => !empty($_SESSION[$session_id.'_es_administrador']) ? $_SESSION[$session_id.'_es_administrador'] : false,
         );
@@ -50,7 +49,6 @@
                 $_SESSION[$session_id.'_nombre'] = $consulta_usuario[0]['nombre_usuario'];
                 $_SESSION[$session_id.'_perfil_id'] = $consulta_usuario[0]['perfil_id'];
                 $_SESSION[$session_id.'_perfil'] = $consulta_usuario[0]['descripcion'];
-                $_SESSION[$session_id.'_imagen'] = !empty($context['biblioteca'][$consulta_usuario[0]['usuario_id']]['perfil']['url']) ? $context['biblioteca'][$consulta_usuario[0]['usuario_id']]['perfil']['url'] : '' ;
                 $_SESSION[$session_id.'_conectado'] = true;
                 $_SESSION[$session_id.'_es_administrador'] = $consulta_usuario[0]['perfil_id'] == 1 ? true : false;
                 $mensaje_retorno = 'OK|'.mensaje_iniciado_correctamente;
