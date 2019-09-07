@@ -39,10 +39,19 @@ $(document).ready(function(){
 
         $('input[type=file]').change(function(){
                 var filename = jQuery(this).val().split('\\').pop();
+                var input_prefijo = $('input.input_prefijo').val();
+                console.log(input_prefijo);
                 console.log(jQuery(this));
                 console.log(filename);
                 $('#label_imagen_perfil').html(filename);
         });
+
+        //fondo de la web
+        if (background_image != ""){
+                console.log(background_image);
+                $('#fondo_portal').css('background-image', "url("+ background_image +")");
+        }
+        //fondo de la web
 });
 
 //textos animados

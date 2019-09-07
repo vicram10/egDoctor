@@ -17,6 +17,7 @@
     <!-- SCRIPTS -->
     <script type="text/javascript">
         var titulos_aleatorios = "', !empty($context['acerca_de']['titulos_academicos']['valor']) ? $context['acerca_de']['titulos_academicos']['valor'] : '' ,'";
+        var background_image = "', !empty($context['biblioteca'][$user_id]['fondo']['url']) ? $context['biblioteca'][$user_id]['fondo']['url'] : $themeurl.'/default/images/hero/2.jpg' ,'";
     </script>
     <script src="', $themeurl ,'/default/js/jquery.js"></script>
     <!--[if lt IE 9]> <script type="text/javascript" src="', $themeurl ,'/default/js/modernizr.custom.js"></script> <![endif]-->

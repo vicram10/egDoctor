@@ -67,6 +67,9 @@
     const label_media_titulo = 'Media';
     const label_media_titulo2 = 'Configurando Imagenes';
     const label_media_perfil = 'Imagen del Perfil';
+    const label_media_portal = 'Imagen del Portal de la Web';
+    const label_media_acerca_de = 'Imagen de la Secci&oacute;n Acerca de';
+    const label_media_fondo = 'Imagen del Fondo del Portal';
 
     //botones
     const btn_iniciar = 'Iniciar';

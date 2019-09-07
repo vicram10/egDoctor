@@ -131,7 +131,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
+                    <!-- <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a> -->
                 </div>
             </div>
             <!-- /LEFTPART -->
