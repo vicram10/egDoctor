@@ -13,7 +13,7 @@
                     <div class="inner_content">
                         <div class="image_wrap">
                             <img src="', $themeurl ,'/default/images/about/600x600.jpg" alt="" />
-                            <div class="main" data-img-url="', !empty($context['biblioteca'][$user_id]['portal']['url']) ? $context['biblioteca'][$user_id]['portal']['url'] :  $themeurl .'/default/images/about/1.jpg' ,'"></div>
+                            <div class="main" data-img-url="', !empty($context['biblioteca']['portal']['url']) ? $context['biblioteca']['portal']['url'] :  $themeurl .'/default/images/about/1.jpg' ,'"></div>
                         </div>
                         <div class="name_holder">
                             <h3>', $context['acerca_de']['mi_nombre']['valor']  ,' <span>', $context['acerca_de']['mi_apellido']['valor'] ,'</span></h3>
@@ -45,7 +45,7 @@
                             <div class="about_image_wrap parallax" data-relative-input="true">
                                 <div class="image layer" data-depth="0.1">
                                     <img src="', $themeurl ,'/default/images/about/550x640.jpg" alt="" />
-                                    <div class="inner" data-img-url="', !empty($context['biblioteca'][$user_id]['acerca-de']['url']) ? $context['biblioteca'][$user_id]['acerca-de']['url'] :  $themeurl .'/default/images/about/1.jpg' ,'"></div>
+                                    <div class="inner" data-img-url="', !empty($context['biblioteca']['acerca-de']['url']) ? $context['biblioteca']['acerca-de']['url'] :  $themeurl .'/default/images/about/1.jpg' ,'"></div>
                                 </div>
                                 <div class="border layer" data-depth="0.2">
                                     <img src="', $themeurl ,'/default/images/about/550x640.jpg" alt="" />

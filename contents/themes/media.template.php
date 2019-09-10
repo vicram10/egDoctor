@@ -13,10 +13,10 @@ echo '
                     <div class="form-group row">
                         <label class="col-form-label col-lg-3 col-sm-12 text-center">
                             ', label_media_perfil,'';
-                            if (!empty($context['biblioteca'][$user_id]['perfil']['url'])){
+                            if (!empty($context['biblioteca']['perfil']['url'])){
                                 echo '
                                 <p class="mt-3">
-                                    <img width="50" height="50" src="', $context['biblioteca'][$user_id]['perfil']['url'] ,'" alt="', $context['biblioteca'][$user_id]['perfil']['nombre'] ,'" />
+                                    <img width="50" height="50" src="', $context['biblioteca']['perfil']['url'] ,'" alt="', $context['biblioteca']['perfil']['nombre'] ,'" />
                                 </p>';
                             }
                         echo '
@@ -42,10 +42,10 @@ echo '
                     <div class="form-group row">
                         <label class="col-form-label col-lg-3 col-sm-12 text-center">
                             ', label_media_portal,'';
-                            if (!empty($context['biblioteca'][$user_id]['portal']['url'])){
+                            if (!empty($context['biblioteca']['portal']['url'])){
                                 echo '
                                 <p class="mt-3">
-                                    <img width="50" height="50" src="', $context['biblioteca'][$user_id]['portal']['url'] ,'" alt="', $context['biblioteca'][$user_id]['portal']['nombre'] ,'" />
+                                    <img width="50" height="50" src="', $context['biblioteca']['portal']['url'] ,'" alt="', $context['biblioteca']['portal']['nombre'] ,'" />
                                 </p>';
                             }
                         echo '
@@ -71,10 +71,10 @@ echo '
                     <div class="form-group row">
                         <label class="col-form-label col-lg-3 col-sm-12 text-center">
                             ', label_media_acerca_de,'';
-                            if (!empty($context['biblioteca'][$user_id]['acerca-de']['url'])){
+                            if (!empty($context['biblioteca']['acerca-de']['url'])){
                                 echo '
                                 <p class="mt-3">
-                                    <img width="50" height="50" src="', $context['biblioteca'][$user_id]['acerca-de']['url'] ,'" alt="', $context['biblioteca'][$user_id]['acerca-de']['nombre'] ,'" />
+                                    <img width="50" height="50" src="', $context['biblioteca']['acerca-de']['url'] ,'" alt="', $context['biblioteca']['acerca-de']['nombre'] ,'" />
                                 </p>';
                             }
                         echo '
@@ -100,10 +100,10 @@ echo '
                     <div class="form-group row">
                         <label class="col-form-label col-lg-3 col-sm-12 text-center">
                             ', label_media_fondo,'';
-                            if (!empty($context['biblioteca'][$user_id]['fondo']['url'])){
+                            if (!empty($context['biblioteca']['fondo']['url'])){
                                 echo '
                                 <p class="mt-3">
-                                    <img width="50" height="50" src="', $context['biblioteca'][$user_id]['fondo']['url'] ,'" alt="', $context['biblioteca'][$user_id]['fondo']['nombre'] ,'" />
+                                    <img width="50" height="50" src="', $context['biblioteca']['fondo']['url'] ,'" alt="', $context['biblioteca']['fondo']['nombre'] ,'" />
                                 </p>';
                             }
                         echo '

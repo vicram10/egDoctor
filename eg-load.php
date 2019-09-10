@@ -160,7 +160,7 @@
         while($archivo = readdir($actual_directorio)){
             if ($archivo != '.' && $archivo != '..' && $archivo != 'index.php'){
                 $identificador = explode('_', $archivo);
-                $context['biblioteca'][$identificador[0]][$identificador[1]] = array(
+                $context['biblioteca'][$identificador[0]] = array(
                     'nombre' => $archivo,
                     'url' => $rooturl.'contents/upload/'.$archivo,
                     'archivo' => DirContent.'/upload/'.$archivo,
